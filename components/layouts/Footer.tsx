@@ -1,6 +1,6 @@
 "use client";
 
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -34,24 +34,53 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4 text-[#FACC15]">Contact Info</h3>
           <ul className="space-y-3 text-gray-300">
             <li>📞 Call Us Now: +91 9954362043</li>
-            <li>📍 Visit Us: Alokpur, Near Pratiksha Hospital, VIP Road, Barbari, Guwahati - 781036</li>
+            <li>📍 Alokpur, Near Pratiksha Hospital, VIP Road, Barbari, Guwahati - 781036</li>
             <li>🕒 Open 24/7</li>
           </ul>
         </div>
 
-        {/* NEWSLETTER */}
+        {/* SOCIAL MEDIA ICONS */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-[#FACC15]">Newsletter</h3>
-          <p className="text-gray-300">Get updates & special offers.</p>
-          <div className="mt-3 flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-4 py-2 rounded-l-lg w-full text-black focus:outline-none"
-            />
-            <button className="bg-[#FACC15] text-black font-semibold px-4 rounded-r-lg hover:bg-yellow-400">
-              Join
-            </button>
+          <h3 className="text-xl font-semibold mb-4 text-[#FACC15]">Follow Us</h3>
+
+          <div className="flex space-x-4 mt-3">
+
+            {/* Facebook */}
+            <a
+              href="#"
+              target="_blank"
+              className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full border border-white/20 hover:bg-[#1877F2] transition"
+            >
+              <FaFacebookF className="text-white text-lg" />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="#"
+              target="_blank"
+              className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full border border-white/20 hover:bg-pink-500 transition"
+            >
+              <FaInstagram className="text-white text-lg" />
+            </a>
+
+            {/* YouTube */}
+            <a
+              href="#"
+              target="_blank"
+              className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full border border-white/20 hover:bg-red-600 transition"
+            >
+              <FaYoutube className="text-white text-lg" />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/919954362043"
+              target="_blank"
+              className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full border border-white/20 hover:bg-green-500 transition"
+            >
+              <FaWhatsapp className="text-white text-lg" />
+            </a>
+
           </div>
         </div>
       </div>
