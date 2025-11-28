@@ -62,7 +62,7 @@ export default function AboutPage() {
           {/* LEFT IMAGE */}
           <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/assets/a1.jpg"
+              src="/assets/a3.jpg"
               alt="Luxury Hotel"
               fill
               className="object-cover"
