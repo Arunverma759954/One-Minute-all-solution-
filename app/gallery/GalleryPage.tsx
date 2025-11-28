@@ -7,11 +7,11 @@ export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    "/assets/gallery/g1.jpg",
-    "/assets/gallery/g2.jpg",
-    "/assets/gallery/g3.jpg",
-    "/assets/gallery/g4.jpg",
-    "/assets/gallery/g5.jpg",
+    "/assets/gallery/s1.jpg",
+    "/assets/gallery/s2.jpg",
+    "/assets/gallery/s3.jpg",
+    "/assets/gallery/s4.jpg",
+    "/assets/gallery/s5.jpg",
   ];
 
   return (
