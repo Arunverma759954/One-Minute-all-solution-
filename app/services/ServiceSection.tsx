@@ -7,27 +7,27 @@ export default function ServiceSection() {
     {
       title: "Luxury Rooms",
       description: "Our rooms are designed to provide ultimate comfort with modern interiors, cozy ambiance, and premium facilities to ensure a memorable stay.",
-      img: "/assets/img1.jpg",
+      img: "/assets/gallery/s1.jpg",
     },
     {
       title: "Fine Dining",
       description: "Enjoy a gourmet experience with a wide variety of cuisines prepared by top chefs, in a relaxing and elegant setting.",
-      img: "/assets/about1.jpg",
+      img: "/assets/gallery/s2.jpg",
     },
     {
       title: "Spa & Wellness",
       description: "Rejuvenate your mind and body with our spa treatments, wellness programs, and personalized care.",
-      img: "/assets/about.jpg",
+      img: "/assets/gallery/s3.jpg",
     },
     {
       title: "Event & Conference",
       description: "Host memorable events, weddings, and corporate meetings with our fully equipped venues and professional support.",
-      img: "/assets/about1.jpg",
+      img: "/assets/gallery/s4.jpg",
     },
     {
       title: "Adventure & Activities",
       description: "From sightseeing to recreational activities, we offer a range of experiences to make your stay exciting and fun.",
-      img: "/assets/banner/b3.jpg",
+      img: "/assets/gallery/s5.jpg",
     },
   ];
 
