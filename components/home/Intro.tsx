@@ -10,7 +10,7 @@ export default function IntroSection() {
         {/* LEFT IMAGE */}
         <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-xl">
           <Image
-            src="/assets/img1.jpg"
+            src="/assets/images/home-img1.jpg"
             alt="Luxury Hotel"
             fill
             className="object-cover"
