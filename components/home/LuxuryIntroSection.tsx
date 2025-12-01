@@ -51,7 +51,7 @@ export default function LuxuryIntroSection() {
         <div className="relative">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-[460px]">
             <Image
-              src="/assets/banner/b3.jpg"
+              src="/assets/banner/b4.jpg"
               alt="Luxury Room"
               fill
               className="object-cover"
