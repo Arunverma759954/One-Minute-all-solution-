@@ -74,7 +74,7 @@ export default function AboutPage() {
               Comfort • Care • Convenience
             </h4>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-2 leading-tight">
-              Welcome to <span className="text-[#FACC15]">Atithi</span>
+              Welcome to <span className="text-[#FACC15]">Atithi Homestay</span>
             </h2>
             <p className="mt-6 text-gray-600 leading-relaxed">
               Atithi is committed to offering a peaceful, clean, and comfortable stay for
