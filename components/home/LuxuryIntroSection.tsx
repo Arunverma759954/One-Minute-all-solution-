@@ -14,17 +14,17 @@ export default function LuxuryIntroSection() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1E1E1E] leading-tight">
-            EXPERIENCE LUXURY & COMFORT <br /> AT ATITHI HOTEL
+            EXPERIENCE LUXURY & COMFORT <br /> AT ATITHI HOMESTAY
           </h2>
 
           <p className="text-gray-600 leading-relaxed">
-            Atithi Hotel blends traditional Indian hospitality with world-class comfort. 
+            Atithi Homestay blends traditional Indian hospitality with world-class comfort. 
             Our peaceful ambiance, premium rooms, and warm service ensure a memorable stay 
             for families, couples, and business travelers alike.
           </p>
 
           <p className="italic text-gray-700 border-l-4 border-[#8B5E34] pl-4">
-            “ Atithi Devo Bhava – At Atithi Hotel, every guest is welcomed with warmth, 
+            “ Atithi Devo Bhava – At Atithi Homestay, every guest is welcomed with warmth, 
             respect and a luxurious experience you will cherish forever. ”
           </p>
 
@@ -42,7 +42,7 @@ export default function LuxuryIntroSection() {
               <h4 className="text-xl font-semibold text-[#1E1E1E]">
                 Rajeev Sharma
               </h4>
-              <p className="text-gray-500">— General Manager, Atithi Hotel</p>
+              <p className="text-gray-500">— General Manager, Atithi Homestay</p>
             </div>
           </div>
         </div>
