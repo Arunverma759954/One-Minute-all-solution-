@@ -32,11 +32,11 @@ export default function Header() {
         {/* DESKTOP RIGHT SIDE BUTTONS */}
         <div className="hidden md:flex items-center space-x-5">
           <a
-            href="tel:+919954362043"
+            href="tel:+916000891365"
             className="flex items-center gap-2 font-semibold text-[#1E3A8A] hover:text-[#0b1f52] transition"
           >
             <FiPhoneCall className="text-xl" />
-            <span>+91 9954362043</span>
+            <span>+91 6000891365</span>
           </a>
 
           <Link
@@ -50,7 +50,7 @@ export default function Header() {
         {/* MOBILE RIGHT SIDE: CALL + HAMBURGER */}
         <div className="md:hidden flex items-center gap-4">
           <a
-            href="tel:+919954362043"
+            href="tel:+916000891365"
             className="flex items-center gap-1 text-[#1E3A8A] font-semibold"
           >
             <FiPhoneCall className="text-2xl" />
