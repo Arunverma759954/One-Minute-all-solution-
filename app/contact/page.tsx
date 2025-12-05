@@ -1,13 +1,28 @@
 import Contactsection from "./ContactSection";
 
 export const metadata = {
-  title: "Contact Us | Atithi Homestay – Get in Touch for Bookings & Enquiries",
+  title:
+    "Atithi Homestay Guwahati — Contact Us & Booking Enquiry",
   description:
-    "Contact Atithi Homestay for room bookings, stay enquiries, pricing details, and guest support. We're available to assist you with clean, comfortable and premium homestay services.",
+    "Get in touch with Atithi Homestay Guwahati. Find our address, phone number and booking form — reach out now to book your stay or ask questions.",
   keywords:
-    "Atithi Homestay contact, homestay booking, rooms near me, contact homestay, guest house booking, Atithi Homestay phone number, stay enquiry, homestay support",
+    "Atithi Homestay Guwahati contact, contact Atithi Homestay, Guwahati homestay contact, hotel booking enquiry Assam, guest house contact Guwahati, Atithi Homestay phone, hotel address Guwahati",
+  
+  // Canonical URL (SEO best practice)
+  alternates: {
+    canonical: "https://www.atithihome.com/",
+  },
 
- 
+  // ⭐ Short OG image
+  openGraph: {
+    images: "/assets/gallery/s3.jpg",
+  },
+
+  // ⭐ Twitter card image
+  twitter: {
+    card: "summary_large_image",
+    images: "/assets/gallery/s3.jpg",
+  },
 };
 
 export default function Page() {
