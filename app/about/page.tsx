@@ -1,16 +1,13 @@
-import AboutClient from "./AboutClient";
+import AboutSection from "./AboutSection";
 
 export const metadata = {
-  title: "About Us | Atithi Homestay – Luxury Rooms & Comfort Stay",
+  title: "Atithi Homestay Guwahati — About Us & Our Hospitality",
   description:
-    "Atithi Homestay offers clean, comfortable, and peaceful luxury rooms with modern amenities. Trusted by thousands of guests for quality service and hospitality.",
-
+    "Learn about Atithi Homestay in Guwahati: our commitment to clean, comfortable rooms, modern amenities, 24/7 support and warm hospitality — making every stay relaxing and memorable.",
   keywords:
-    "Atithi Homestay, luxury rooms, homestay India, rooms near me, family stay, comfort stay, clean rooms, guest house, premium homestay",
-
-
+    "Atithi Homestay, Atithi Homestay Guwahati, about Atithi Homestay, Guwahati homestay, Guwahati hotel, comfortable stay Guwahati, premium homestay Assam, hotel hospitality Guwahati",
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return <AboutSection />;
 }
