@@ -111,7 +111,7 @@ export default function ContactSection() {
         {/* ===================== MAP SECTION ===================== */}
         <div className="w-full h-[400px] mt-10">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.123456789!2d91.745678!3d26.144567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a123456789abc%3A0xabcdef123456!2sAtithi%20Home%20Stay!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.175097033742!2d91.8159562!3d26.1584264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a592da94e80eb%3A0x8aca64c9f90a4424!2sAtithi%20guest%20house!5e0!3m2!1sen!2sin!4v1765096524482!5m2!1sen!2sin%22"
             className="w-full h-full border-0"
             allowFullScreen
             loading="lazy"
