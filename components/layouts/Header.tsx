@@ -15,10 +15,18 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
 
-        {/* LOGO */}
-        <div className="text-2xl font-extrabold tracking-wide">
-          <span className="text-[#1E3A8A]">Atithi</span>
-        </div>
+       {/* LOGO */}
+<div className="flex items-center space-x-2">
+  <img
+    src="/assets/atithi.png"
+    alt="Atithi Logo"
+    className="w-10 h-10 object-contain"
+  />
+  <span className="text-2xl font-extrabold tracking-wide text-[#1E3A8A]">
+    Atithi
+  </span>
+</div>
+
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex space-x-8 text-[16px] font-semibold">
