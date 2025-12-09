@@ -39,6 +39,7 @@ export default function ContactSection() {
 
     if (data.success) {
       setStatus("Message sent successfully!");
+      alert("Message sent successfully!");
       setFormData({
         name: "",
         email: "",
