@@ -2,8 +2,15 @@
 
 import React from "react";
 import Image from "next/image";
+import { useState, useRef } from "react";
 
 export default function ContactSection() {
+   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   return (
     <>
      
