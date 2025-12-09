@@ -11,6 +11,30 @@ export default function ContactSection() {
     subject: "",
     message: "",
   });
+   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+    setLoading(false);
+
+    if (data.success) {
+      setStatus("Message sent successfully!");
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } else {
+      setStatus("Failed to send message. Please try again.");
+    }
+  };
   return (
     <>
      
@@ -83,32 +107,46 @@ export default function ContactSection() {
   <h3 className="text-2xl font-semibold text-white mb-6 md:text-center">
     Get In Touch
   </h3>
-  <form className="space-y-5">
+  <form className="space-y-5" onSubmit={handleSubmit}>
     <input
       type="text"
       placeholder="Your Name"
+       required
+       value={form.name}
+       onChange={(e) => setForm({ ...form, name: e.target.value })}
       className="w-full border border-gray-700 rounded-lg px-4 py-3 bg-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:border-[#B59260]"
     />
     <input
       type="email"
       placeholder="Enter E-mail"
+        required
+       value={form.email}
+       onChange={(e) => setForm({ ...form, email: e.target.value })}
       className="w-full border border-gray-700 rounded-lg px-4 py-3 bg-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:border-[#B59260]"
     />
-    <select className="w-full border border-gray-700 rounded-lg px-4 py-3 bg-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:border-[#B59260]">
+    <select 
+        required
+       value={form.subject}
+       onChange={(e) => setForm({ ...form, subject: e.target.value })}
+       className="w-full border border-gray-700 rounded-lg px-4 py-3 bg-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:border-[#B59260]">
       <option>Subject One</option>
       <option>Subject Two</option>
       <option>Subject Three</option>
     </select>
     <textarea
       rows={5}
+        required
+       value={form.message}
+       onChange={(e) => setForm({ ...form, message: e.target.value })}
       placeholder="Your Message"
       className="w-full border border-gray-700 rounded-lg px-4 py-3 bg-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:border-[#B59260]"
     ></textarea>
     <button
+        disabled={loading}
       type="submit"
       className="w-full bg-[#B59260] hover:bg-[#9E7B50] py-3 rounded-lg font-semibold text-lg text-white transition"
     >
-      Submit
+       {loading ? "Submitting..." : "Submit"}
     </button>
   </form>
 </div>
