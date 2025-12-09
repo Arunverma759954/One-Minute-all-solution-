@@ -1,19 +1,27 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
-import { useState, useRef } from "react";
+import React, { useState } from "react";
 
 export default function ContactSection() {
-   const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
-   const [loading, setLoading] = useState(false);
+
+  const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
 
+  // Handle Input Change
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Submit Form
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -22,7 +30,7 @@ export default function ContactSection() {
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
+      body: JSON.stringify(formData), // FIXED
     });
 
     const data = await res.json();
@@ -30,7 +38,12 @@ export default function ContactSection() {
 
     if (data.success) {
       setStatus("Message sent successfully!");
-      setForm({ name: "", email: "", subject: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     } else {
       setStatus("Failed to send message. Please try again.");
     }
