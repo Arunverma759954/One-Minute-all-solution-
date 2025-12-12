@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       to: process.env.GMAIL_TO as string,
       subject: `Atithi Home Enquiry ${subject}`,
       html: `
-        <h2>Enquiry for Atithi Home</h2>
+        <h2>Enquiry from Atithi Home</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong> ${message}</p>
