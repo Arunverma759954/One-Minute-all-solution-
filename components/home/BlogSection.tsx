@@ -3,19 +3,19 @@ export default function BlogSection() {
     {
       title: "Experience Luxury Living at Our Premium Suites",
       desc: "Discover unmatched comfort, modern amenities, and an unforgettable hospitality experience.",
-      img: "/assets/images/img1.jpg",
+      img: "/assets/img6.jpeg",
       date: "25 Nov 2025",
     },
     {
       title: "Top 5 Attractions Near Our Hotel You Must Visit",
       desc: "Plan your itinerary with ease—explore nearby tourist hotspots just minutes away.",
-      img: "/assets/images/img2.jpg",
+      img: "/assets/img7.jpeg",
       date: "21 Nov 2025",
     },
     {
       title: "Why Guests Love Our Signature Dining Experience",
       desc: "Taste the finest cuisines crafted by top chefs for a memorable culinary journey.",
-      img: "/assets/images/img3.jpg",
+      img: "/assets/img8.jpeg",
       date: "18 Nov 2025",
     },
   ];

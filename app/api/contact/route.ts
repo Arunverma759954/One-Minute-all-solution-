@@ -4,43 +4,32 @@ export async function POST(req: Request) {
   try {
     const { name, email, mobile, message } = await req.json();
 
-    // Create transporter
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
       secure: false,
       auth: {
-        user: process.env.GMAIL_USER as string,
-        pass: process.env.GMAIL_APP_PASSWORD as string,
+        user: process.env.GMAIL_USER!,
+        pass: process.env.GMAIL_APP_PASSWORD!,
       },
     });
 
-    // Email content
-    const mailOptions = {
-      from: process.env.GMAIL_USER as string,
-      to: process.env.GMAIL_TO as string,
-      subject: `Atithi Home Enquiry`,
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_TO,
+      subject: "Atithi Home Enquiry",
       html: `
-        <h2>Enquiry from Atithi Home</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Mobile:</strong> ${mobile}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        <h2>New Enquiry</h2>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Email:</b> ${email}</p>
+        <p><b>Mobile:</b> ${mobile}</p>
+        <p><b>Message:</b> ${message}</p>
       `,
-    };
-
-    // Send email
-    await transporter.sendMail(mailOptions);
-
-    return Response.json({
-      success: true,
-      message: "Message sent successfully",
     });
+
+    return Response.json({ success: true });
   } catch (error) {
-    console.error("MAIL ERROR:", error);
-    return Response.json({
-      success: false,
-      message: "Failed to send email!",
-    });
+    console.error(error);
+    return Response.json({ success: false }, { status: 500 });
   }
 }
