@@ -24,22 +24,16 @@ export default function IntroSection() {
           </h4>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-2 leading-tight">
-            Experience the Best Hospitality at{" "}
-            <span className="text-[#FACC15]">Atithi Homestay </span>
+            Affordable Hotel near{" "}
+            <span className="text-[#FACC15]">Pratiksha Hospital Guwahati – Open 24/7 </span>
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            At Atithi Homestay , we bring you premium comfort and exceptional
-            hospitality. Our peaceful environment, spacious luxury rooms, and
-            dedicated 24/7 services offer a truly memorable stay for every
-            guest. Whether you are traveling for leisure or business, we assure
-            top-class arrangements to make your experience perfect.
+            Welcome to Atithi Home, your trusted Hotel near Pratiksha Hospital Guwahati, offering comfortable, clean, and affordable accommodation in the heart of the city. Conveniently located at Alokpur, Near Pratiksha Hospital, VIP Road, Barbari, Guwahati – 781036, we provide a peaceful and secure stay experience for families, business travelers, and hospital visitors.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-            We focus on providing a homely environment with modern amenities,
-            hygienic rooms, and personalized services. Your comfort and
-            satisfaction are our priority from the moment you step in.
+            If you are searching for a reliable Budget Hotel in Guwahati that combines comfort, convenience, and affordability, Atithi Home is the perfect choice.
           </p>
 
           {/* STATS */}
