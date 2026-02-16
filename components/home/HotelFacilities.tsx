@@ -37,11 +37,11 @@ export default function FacilitiesSection3() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-2 drop-shadow-lg">
-            Simple & Comfortable for a Peaceful Stay
+            Prime Location in Barbari, Guwahati
           </h2>
 
           <p className="mt-4 text-gray-200">
-            Experience a homely environment with essential amenities to make your stay pleasant.
+            Situated in a peaceful neighborhood, Atithi Home is a well-located Hotel in Barbari Guwahati, providing easy access to VIP Road and surrounding areas. Guests looking for a safe and quiet Family Stay in Guwahati will appreciate our calm environment and supportive hospitality.
           </p>
         </div>
 
