@@ -31,19 +31,9 @@ const highlights = [
 export default function BlogPost() {
   return (
     <article className="min-h-screen bg-white text-gray-900 antialiased">
-      {/* Nav – white theme */}
-      <nav className="fixed top-16 left-0 right-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-md shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="group flex items-center gap-2 text-gray-700 hover:text-[#1E3A8A] font-medium transition">
-            <span className="group-hover:-translate-x-1 transition">←</span> Back to Home
-          </Link>
-          <span className="text-[#1E3A8A] text-sm font-semibold tracking-[0.2em] uppercase">Blog</span>
-        </div>
-      </nav>
-
-      {/* Hero – split: image left, content right on WHITE */}
-      <header className="relative min-h-screen flex flex-col lg:flex-row pt-24 bg-white">
-        <div className="relative flex-1 min-h-[45vh] lg:min-h-screen lg:w-[55%]">
+      {/* Hero banner for blog detail */}
+      <header className="relative bg-[#1E3A8A] text-white pt-24 pb-16 md:pb-20">
+        <div className="absolute inset-0 opacity-25">
           <Image
             src="/assets/images/home-img1.jpg"
             alt="Atithi Home"
@@ -51,24 +41,31 @@ export default function BlogPost() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/20 lg:bg-gradient-to-r lg:from-black/30 lg:to-transparent" />
         </div>
-        <div className="relative lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-[50%] flex items-center lg:pl-12 xl:pl-20 bg-white">
-          <div className="w-full max-w-xl mx-auto px-6 py-16 lg:py-24">
-            <div className="inline-flex items-center gap-2 bg-[#FACC15] text-[#1E3A8A] px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase mb-8">
-              <FaMapMarkerAlt /> Atithi Home Guwahati
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-black leading-[1.08] tracking-tight text-gray-900">
-              Best Hotel near Pratiksha Hospital Guwahati
-            </h1>
-            <p className="mt-4 text-2xl md:text-3xl font-bold text-[#1E3A8A]">
-              Comfortable & Affordable Stay
-            </p>
-            <div className="mt-8 w-24 h-1.5 bg-[#1E3A8A] rounded-full" />
-            <p className="mt-8 text-lg md:text-xl text-gray-600 leading-relaxed">
-              Stay at Atithi Home — 24/7 service, affordable rooms, and a short walk to the hospital. Book your budget stay today.
-            </p>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A] to-[#1E3A8A]/80" />
+
+        <div className="relative max-w-5xl mx-auto px-6">
+          <p className="text-sm text-white/80 mb-2">
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>{" "}
+            /{" "}
+            <Link href="/blog" className="hover:underline">
+              Blog
+            </Link>{" "}
+            /{" "}
+            <span className="font-semibold">Detail</span>
+          </p>
+          <div className="inline-flex items-center gap-2 bg-[#FACC15] text-[#1E3A8A] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
+            <FaMapMarkerAlt /> Atithi Home Guwahati
           </div>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-3xl">
+            Best Hotel near Pratiksha Hospital Guwahati for Comfortable & Affordable Stay
+          </h1>
+          <p className="mt-4 text-base md:text-lg text-white/90 max-w-2xl">
+            Stay at Atithi Home — 24/7 service, affordable rooms, and a short walk to Pratiksha Hospital
+            Guwahati. Know why guests choose us for their medical and family stays.
+          </p>
         </div>
       </header>
 
@@ -116,9 +113,44 @@ export default function BlogPost() {
       <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gray-50/80">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-xl">
-              <Image src="/assets/banner/b4.jpg" alt="Hotel near Pratiksha Hospital" fill className="object-cover" />
-              <div className="absolute inset-0 bg-black/10" />
+            {/* LEFT: Enhanced image card */}
+            <div className="relative h-80 lg:h-[420px]">
+              {/* soft gradient behind */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#1E3A8A]/10 via-white to-[#FACC15]/10" />
+
+              {/* main image card */}
+              <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
+                <Image
+                  src="/assets/banner/b4.jpg"
+                  alt="Hotel near Pratiksha Hospital"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black/10" />
+
+                {/* Top-left badge */}
+                <div className="absolute top-4 left-4 bg-white/90 text-[#1E3A8A] text-xs font-semibold px-3 py-1 rounded-full shadow">
+                  Near Pratiksha Hospital
+                </div>
+
+                {/* Bottom-left info chip */}
+                <div className="absolute bottom-4 left-4 bg-white/95 text-gray-800 text-xs md:text-sm px-3 py-2 rounded-xl shadow flex items-center gap-2">
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#1E3A8A] text-white text-xs font-bold">
+                    2–5
+                  </span>
+                  <span>Minutes walk / short drive</span>
+                </div>
+              </div>
+
+              {/* small secondary photo overlay for richer UI */}
+              <div className="hidden sm:block absolute -bottom-4 right-4 w-32 h-24 md:w-40 md:h-28 rounded-2xl overflow-hidden shadow-xl border border-white bg-white">
+                <Image
+                  src="/assets/img1.jpeg"
+                  alt="Comfortable rooms at Atithi Home"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div>
               <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>

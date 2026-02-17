@@ -1,22 +1,27 @@
+import Link from "next/link";
+
 export default function BlogSection() {
   const blogs = [
     {
-      title: "Experience Luxury Living at Our Premium Suites",
-      desc: "Discover unmatched comfort, modern amenities, and an unforgettable hospitality experience.",
+      title: "Best Hotel near Pratiksha Hospital Guwahati",
+      desc: "Know why Atithi Home is the best, comfortable and budget-friendly stay near Pratiksha Hospital Guwahati.",
       img: "/assets/img6.jpeg",
-      date: "25 Nov 2025",
+      date: "16 Feb 2026",
+      href: "/blog/best-hotel-near-pratiksha-hospital-guwahati",
     },
     {
-      title: "Top 5 Attractions Near Our Hotel You Must Visit",
-      desc: "Plan your itinerary with ease—explore nearby tourist hotspots just minutes away.",
+      title: "Top Attractions Near VIP Road & Barbari",
+      desc: "Explore nearby places when you stay at Atithi Home near Pratiksha Hospital and VIP Road.",
       img: "/assets/img7.jpeg",
-      date: "21 Nov 2025",
+      date: "Coming soon",
+      href: "/blog",
     },
     {
-      title: "Why Guests Love Our Signature Dining Experience",
-      desc: "Taste the finest cuisines crafted by top chefs for a memorable culinary journey.",
+      title: "Tips for a Comfortable Medical Stay in Guwahati",
+      desc: "Simple tips to make your hospital visit and stay stress-free for you and your family.",
       img: "/assets/img8.jpeg",
-      date: "18 Nov 2025",
+      date: "Coming soon",
+      href: "/blog",
     },
   ];
 
@@ -60,9 +65,12 @@ export default function BlogSection() {
                 </h3>
                 <p className="text-gray-600 mb-4">{blog.desc}</p>
 
-                <button className="text-[#C9A86A] font-semibold group-hover:underline">
-                  Read More →
-                </button>
+                <Link
+                  href={blog.href}
+                  className="text-[#C9A86A] font-semibold group-hover:underline inline-flex items-center gap-1"
+                >
+                  Read More <span>→</span>
+                </Link>
               </div>
             </div>
           ))}
