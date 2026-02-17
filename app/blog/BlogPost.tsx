@@ -31,6 +31,34 @@ const highlights = [
 
 export default function BlogPost() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+  const [enquiry, setEnquiry] = useState({ name: "", email: "", mobile: "", message: "" });
+  const [enquiryLoading, setEnquiryLoading] = useState(false);
+  const [enquiryStatus, setEnquiryStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleEnquiryChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setEnquiry({ ...enquiry, [e.target.name]: e.target.value });
+  };
+
+  const handleEnquirySubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setEnquiryLoading(true);
+    setEnquiryStatus("idle");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(enquiry),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setEnquiryStatus("success");
+        setEnquiry({ name: "", email: "", mobile: "", message: "" });
+      } else setEnquiryStatus("error");
+    } catch {
+      setEnquiryStatus("error");
+    }
+    setEnquiryLoading(false);
+  };
 
   return (
     <article className="min-h-screen bg-white text-gray-900 antialiased">
@@ -87,9 +115,14 @@ export default function BlogPost() {
         </div>
       </section>
 
+      {/* Two-column: main content + right sidebar enquiry */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 pb-16">
+          {/* LEFT: Main content */}
+          <div>
       {/* Intro – white background, drop cap */}
-      <section className="relative pt-24 pb-20 px-6 bg-gray-50/80">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative pt-24 pb-20 bg-gray-50/80 rounded-2xl px-6 md:px-8">
+        <div>
           <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
           <div className="mt-10">
@@ -113,8 +146,8 @@ export default function BlogPost() {
       </section>
 
       {/* Why Proximity – image with LIGHT overlay, text on white card over it */}
-      <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gray-50/80">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-16 md:py-24 px-6 overflow-hidden bg-gray-50/80 rounded-2xl">
+        <div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* LEFT: Enhanced image card */}
             <div className="relative h-80 lg:h-[420px]">
@@ -175,8 +208,8 @@ export default function BlogPost() {
       </section>
 
       {/* Affordable – bento: image + white text side */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+      <section className="py-16 md:py-24 px-6 bg-white rounded-2xl">
+        <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
           <div className="relative h-80 lg:h-auto lg:min-h-[520px]">
             <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -204,8 +237,8 @@ export default function BlogPost() {
       </section>
 
       {/* 24/7 – white section with blue accent strip */}
-      <section className="py-24 md:py-28 px-6 bg-gray-50/80">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16 md:py-24 px-6 bg-gray-50/80 rounded-2xl">
+        <div>
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="shrink-0 text-center lg:text-left">
               <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E3A8A] bg-[#1E3A8A]/5 text-[#1E3A8A]">
@@ -307,6 +340,86 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
+
+          </div>
+
+          {/* RIGHT: Enquiry form sidebar – scrolls with page */}
+          <aside>
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 mt-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-1">Book Your Stay</h3>
+              <p className="text-sm text-gray-500 mb-6">Send us your enquiry — we&apos;ll respond quickly.</p>
+
+              <form onSubmit={handleEnquirySubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="blog-name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <input
+                    id="blog-name"
+                    type="text"
+                    name="name"
+                    value={enquiry.name}
+                    onChange={handleEnquiryChange}
+                    required
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="blog-email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input
+                    id="blog-email"
+                    type="email"
+                    name="email"
+                    value={enquiry.email}
+                    onChange={handleEnquiryChange}
+                    required
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="blog-mobile" className="block text-sm font-medium text-gray-700 mb-1">Mobile</label>
+                  <input
+                    id="blog-mobile"
+                    type="tel"
+                    name="mobile"
+                    value={enquiry.mobile}
+                    onChange={handleEnquiryChange}
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="blog-message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea
+                    id="blog-message"
+                    name="message"
+                    value={enquiry.message}
+                    onChange={handleEnquiryChange}
+                    rows={3}
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none resize-none"
+                    placeholder="Check-in date, number of guests, or any question..."
+                  />
+                </div>
+
+                {enquiryStatus === "success" && (
+                  <p className="text-sm text-green-600 font-medium">Message sent! We&apos;ll get back soon.</p>
+                )}
+                {enquiryStatus === "error" && (
+                  <p className="text-sm text-red-600 font-medium">Something went wrong. Please try again.</p>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={enquiryLoading}
+                  className="w-full bg-[#1E3A8A] text-white font-semibold py-3 rounded-xl hover:bg-[#10275c] transition disabled:opacity-70"
+                >
+                  {enquiryLoading ? "Sending..." : "Send Enquiry"}
+                </button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
 
       {/* CTA – light section */}
       <section className="relative py-24 md:py-28 px-6 bg-gray-50">
