@@ -308,21 +308,21 @@ export default function BlogPost() {
         </div>
       </section>
 
-      {/* CTA – one blue strip, rest clean */}
-      <section className="relative py-24 md:py-28 px-6 bg-[#1E3A8A]">
-        <div className="absolute inset-0 opacity-10">
+      {/* CTA – light section */}
+      <section className="relative py-24 md:py-28 px-6 bg-gray-50">
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
           <Image src="/assets/images/home-img1.jpg" alt="" fill className="object-cover" />
         </div>
-        <div className="relative max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+        <div className="relative max-w-3xl mx-auto bg-white rounded-2xl shadow-xl border border-gray-100 px-8 py-10 md:px-10 md:py-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3">
             Ready to book?
           </h2>
-          <p className="text-xl text-white/90 mb-10">
-            Atithi Home — trusted budget hotel near Pratiksha Hospital. 24/7 • Clean rooms • Steps away.
+          <p className="text-base md:text-lg text-gray-600 mb-8">
+            Atithi Home — trusted budget hotel near Pratiksha Hospital. 24/7 service, clean rooms and a peaceful stay just steps away from the hospital.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#FACC15] text-gray-900 font-bold px-12 py-5 rounded-2xl text-xl shadow-xl hover:bg-yellow-400 transition hover:scale-105"
+            className="inline-flex items-center gap-3 bg-[#FACC15] text-gray-900 font-bold px-10 py-4 rounded-full text-lg shadow-md hover:bg-yellow-400 transition hover:scale-105"
           >
             Book Now
             <span className="text-2xl">→</span>
