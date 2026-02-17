@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaRupeeSign,
@@ -29,6 +30,8 @@ const highlights = [
 ];
 
 export default function BlogPost() {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+
   return (
     <article className="min-h-screen bg-white text-gray-900 antialiased">
       {/* Hero banner for blog detail */}
@@ -44,7 +47,7 @@ export default function BlogPost() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A] to-[#1E3A8A]/80" />
 
-        <div className="relative max-w-5xl mx-auto px-6">
+        <div className="relative max-w-7xl mx-auto px-6">
           <p className="text-sm text-white/80 mb-2">
             <Link href="/" className="hover:underline">
               Home
@@ -71,7 +74,7 @@ export default function BlogPost() {
 
       {/* Highlight bar – white card */}
       <section className="relative z-10 -mt-20 mx-4 md:mx-8 lg:mx-16">
-        <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {highlights.map((h, i) => (
             <div key={i} className="text-center">
               <div className="w-14 h-14 mx-auto rounded-2xl bg-[#1E3A8A] text-[#FACC15] flex items-center justify-center text-2xl mb-3">
@@ -86,7 +89,7 @@ export default function BlogPost() {
 
       {/* Intro – white background, drop cap */}
       <section className="relative pt-24 pb-20 px-6 bg-gray-50/80">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
           <div className="mt-10">
@@ -111,7 +114,7 @@ export default function BlogPost() {
 
       {/* Why Proximity – image with LIGHT overlay, text on white card over it */}
       <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gray-50/80">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* LEFT: Enhanced image card */}
             <div className="relative h-80 lg:h-[420px]">
@@ -173,7 +176,7 @@ export default function BlogPost() {
 
       {/* Affordable – bento: image + white text side */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
           <div className="relative h-80 lg:h-auto lg:min-h-[520px]">
             <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -202,7 +205,7 @@ export default function BlogPost() {
 
       {/* 24/7 – white section with blue accent strip */}
       <section className="py-24 md:py-28 px-6 bg-gray-50/80">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="shrink-0 text-center lg:text-left">
               <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E3A8A] bg-[#1E3A8A]/5 text-[#1E3A8A]">
@@ -241,28 +244,66 @@ export default function BlogPost() {
         </div>
       </section>
 
-      {/* FAQs – white cards */}
+      {/* FAQs – accordion dropdown */}
       <section className="py-24 px-6 bg-gray-50/80">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-4 mb-12">
-            <FaQuestionCircle className="text-4xl text-[#1E3A8A]" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">FAQs</h2>
+          <div className="flex items-center gap-4 mb-10">
+            <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E3A8A]" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">FAQs</h2>
           </div>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className="flex gap-6 p-6 md:p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-[#1E3A8A]/20 transition-all"
-              >
-                <div className="w-14 h-14 rounded-2xl bg-[#1E3A8A]/10 text-[#1E3A8A] flex items-center justify-center text-2xl shrink-0">
-                  <faq.icon />
+
+          <div className="space-y-3">
+            {faqs.map((faq, i) => {
+              const Icon = faq.icon;
+              const isOpen = openFaqIndex === i;
+
+              return (
+                <div
+                  key={i}
+                  className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenFaqIndex(isOpen ? null : i)
+                    }
+                    className={`w-full flex items-center justify-between px-4 md:px-5 py-3 md:py-4 text-left transition ${
+                      isOpen
+                        ? "bg-[#1E3A8A] text-white"
+                        : "bg-white text-gray-900 hover:bg-gray-50"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3 md:gap-4">
+                      <div
+                        className={`w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center text-lg md:text-xl ${
+                          isOpen
+                            ? "bg-white/15 text-[#FACC15]"
+                            : "bg-[#1E3A8A]/10 text-[#1E3A8A]"
+                        }`}
+                      >
+                        <Icon />
+                      </div>
+                      <span className="font-semibold text-sm md:text-base">
+                        {faq.q}
+                      </span>
+                    </div>
+                    <span
+                      className={`ml-3 text-lg md:text-xl transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      ▾
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pt-3 text-sm md:text-base text-gray-700 leading-relaxed bg-white">
+                      {faq.a}
+                    </div>
+                  )}
                 </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 text-xl mb-2">{faq.q}</h3>
-                  <p className="text-gray-600 leading-relaxed">{faq.a}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

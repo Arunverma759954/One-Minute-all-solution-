@@ -15,15 +15,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
 
-       {/* LOGO */}
-<div className="flex items-center space-x-2">
-  <img
-    src="/assets/atithi.png"
-    alt="Atithi Logo"
-    className="w-40 h-150 object-contain"
-  />
-  
-</div>
+        {/* LOGO */}
+        <Link href="/" className="flex items-center space-x-2">
+          <img
+            src="/assets/atithi.png"
+            alt="Atithi Logo"
+            className="w-40 h-150 object-contain"
+          />
+        </Link>
 
 
         {/* DESKTOP MENU */}

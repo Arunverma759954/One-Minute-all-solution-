@@ -37,7 +37,7 @@ export default function BlogListPage() {
         </div>
         <div className="absolute inset-0 bg-[#7b1230]/85" />
 
-        <div className="relative max-w-6xl mx-auto h-full flex items-center justify-between px-4 md:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto h-full flex items-center justify-between px-4 md:px-6 lg:px-8">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">Blog</h1>
             <p className="mt-1 text-sm text-gray-100">
@@ -57,7 +57,7 @@ export default function BlogListPage() {
       </section>
 
       <main className="bg-gray-50 min-h-screen pt-12 pb-24">
-        <section className="max-w-6xl mx-auto px-4">
+        <section className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-sm md:text-base tracking-[0.25em] uppercase text-[#1E3A8A] font-semibold">
