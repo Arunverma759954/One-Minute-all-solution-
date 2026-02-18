@@ -343,6 +343,7 @@ export default function BlogPost() {
 
           </div>
 
+
           {/* RIGHT: Enquiry form sidebar – scrolls with page */}
           <aside>
             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 mt-2">
