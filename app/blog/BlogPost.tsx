@@ -63,7 +63,7 @@ export default function BlogPost() {
   return (
     <article className="min-h-screen bg-white text-gray-900 antialiased">
       {/* Hero banner for blog detail */}
-      <header className="relative bg-[#1E3A8A] text-white pt-24 pb-16 md:pb-20">
+      <header className="relative bg-[#1E3A8A] text-white pt-20 pb-14 md:pb-18">
         <div className="absolute inset-0 opacity-25">
           <Image
             src="/assets/images/home-img1.jpg"
@@ -93,7 +93,7 @@ export default function BlogPost() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-3xl">
             Best Hotel near Pratiksha Hospital Guwahati for Comfortable & Affordable Stay
           </h1>
-          <p className="mt-4 text-base md:text-lg text-white/90 max-w-2xl">
+          <p className="mt-4 text-base md:text-lg text-white/90 mb-5 max-w-2xl">
             Stay at Atithi Home — 24/7 service, affordable rooms, and a short walk to Pratiksha Hospital
             Guwahati. Know why guests choose us for their medical and family stays.
           </p>
@@ -117,11 +117,11 @@ export default function BlogPost() {
 
       {/* Two-column: main content + right sidebar enquiry */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 pb-16">
+        <div className="grid lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 pb-8 md:pb-10">
           {/* LEFT: Main content */}
           <div>
       {/* Intro – white background, drop cap */}
-      <section className="relative pt-24 pb-20 bg-gray-50/80 rounded-2xl px-6 md:px-8">
+      <section className="relative pt-12 pb-12 md:pt-16 md:pb-16 bg-gray-50/80 rounded-2xl px-6 md:px-8">
         <div>
           <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
@@ -146,7 +146,7 @@ export default function BlogPost() {
       </section>
 
       {/* Why Proximity – image with LIGHT overlay, text on white card over it */}
-      <section className="relative py-16 md:py-24 px-6 overflow-hidden bg-gray-50/80 rounded-2xl">
+      <section className="relative py-10 md:py-14 px-6 overflow-hidden bg-gray-50/80 rounded-2xl">
         <div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* LEFT: Enhanced image card */}
@@ -208,7 +208,7 @@ export default function BlogPost() {
       </section>
 
       {/* Affordable – bento: image + white text side */}
-      <section className="py-16 md:py-24 px-6 bg-white rounded-2xl">
+      <section className="py-10 md:py-14 px-6 bg-white rounded-2xl">
         <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
           <div className="relative h-80 lg:h-auto lg:min-h-[520px]">
             <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
@@ -237,7 +237,7 @@ export default function BlogPost() {
       </section>
 
       {/* 24/7 – white section with blue accent strip */}
-      <section className="py-16 md:py-24 px-6 bg-gray-50/80 rounded-2xl">
+      <section className="py-10 md:py-14 px-6 bg-gray-50/80 rounded-2xl">
         <div>
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="shrink-0 text-center lg:text-left">
@@ -262,7 +262,7 @@ export default function BlogPost() {
       </section>
 
       {/* Conclusion – white, big quote */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
           <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed">
@@ -278,7 +278,7 @@ export default function BlogPost() {
       </section>
 
       {/* FAQs – accordion dropdown */}
-      <section className="py-24 px-6 bg-gray-50/80">
+      <section className="py-12 md:py-16 px-6 bg-gray-50/80">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-10">
             <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E3A8A]" />
@@ -346,7 +346,7 @@ export default function BlogPost() {
 
           {/* RIGHT: Enquiry form sidebar – scrolls with page */}
           <aside>
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 mt-2">
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-5 md:p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-1">Book Your Stay</h3>
               <p className="text-sm text-gray-500 mb-6">Send us your enquiry — we&apos;ll respond quickly.</p>
 
@@ -423,7 +423,7 @@ export default function BlogPost() {
       </div>
 
       {/* CTA – light section */}
-      <section className="relative py-24 md:py-28 px-6 bg-gray-50">
+      <section className="relative py-12 md:py-16 px-6 bg-gray-50">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <Image src="/assets/images/home-img1.jpg" alt="" fill className="object-cover" />
         </div>
