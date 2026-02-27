@@ -34,7 +34,7 @@ export default function AtithiHomeContent() {
   return (
     <>
       {/* ========== PROFESSIONAL SANITIZATION & DEEP CLEANING ========== */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -80,7 +80,7 @@ export default function AtithiHomeContent() {
       </section>
 
       {/* ========== COMPREHENSIVE CLEANING SOLUTIONS ========== */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -166,7 +166,7 @@ export default function AtithiHomeContent() {
       </section>
 
       {/* ========== ADVANCED CLEANING TECHNOLOGY ========== */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

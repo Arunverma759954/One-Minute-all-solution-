@@ -39,6 +39,12 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5, // Allow some zoom for accessibility while keeping it responsive
+};
+
 export default function RootLayout({
   children,
 }: {
