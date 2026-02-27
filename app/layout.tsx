@@ -59,7 +59,7 @@ export default function RootLayout({
           <Header />
 
           {/* PAGE CONTENT */}
-          <main className="pt-16">{children}</main>
+          <main className="pt-[50px]">{children}</main>
 
           {/* BOOK YOUR STAY - ABOVE FOOTER */}
           <BookYourStayCTA />
