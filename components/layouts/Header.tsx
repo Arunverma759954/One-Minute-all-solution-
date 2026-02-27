@@ -19,6 +19,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [menuOpen]);
+
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
@@ -120,38 +132,43 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-50 md:hidden bg-white px-8 py-20 flex flex-col space-y-8"
+            className="fixed inset-0 z-[100] md:hidden bg-white px-8 py-20 flex flex-col space-y-8 shadow-2xl"
           >
+            {/* SOLID BACKDROP FOR DEPTH */}
+            <div className="absolute inset-0 bg-white z-[-1]" />
+
             <button
               onClick={() => setMenuOpen(false)}
-              className="absolute top-6 right-6 text-4xl text-[#1E5F7C]"
+              className="absolute top-6 right-6 text-4xl text-[#1E5F7C] p-2 hover:bg-gray-100 rounded-full transition-colors"
             >
               <FiX />
             </button>
 
-            {[
-              { name: "Home", path: "/" },
-              { name: "About Us", path: "/about" },
-              { name: "Services", path: "/services" },
-              { name: "Gallery", path: "/gallery" },
-              { name: "Blog", path: "/blog" },
-              { name: "Contact", path: "/contact" },
-            ].map((link, idx) => (
-              <motion.div
-                key={link.name}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 + idx * 0.05 }}
-              >
-                <Link
-                  href={link.path}
-                  onClick={handleLinkClick}
-                  className="block text-3xl font-black text-gray-900 tracking-tighter"
+            <div className="flex flex-col space-y-6 mt-4">
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Gallery", path: "/gallery" },
+                { name: "Blog", path: "/blog" },
+                { name: "Contact", path: "/contact" },
+              ].map((link, idx) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 + idx * 0.05 }}
                 >
-                  {link.name}
-                </Link>
-              </motion.div>
-            ))}
+                  <Link
+                    href={link.path}
+                    onClick={handleLinkClick}
+                    className="block text-4xl font-black text-[#1E5F7C] tracking-tighter hover:text-[#2EC3BD] transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
 
             <motion.button
               initial={{ opacity: 0, y: 20 }}
@@ -159,9 +176,9 @@ export default function Header() {
               transition={{ delay: 0.5 }}
               type="button"
               onClick={handleBookNow}
-              className="mt-auto w-full bg-[#1E5F7C] text-white text-center font-bold py-5 rounded-2xl shadow-xl hover:bg-[#164d65] transition-all uppercase tracking-widest text-sm"
+              className="mt-auto w-full bg-[#1E5F7C] text-white text-center font-black py-5 rounded-2xl shadow-[0_20px_40px_rgba(30,95,124,0.3)] hover:bg-[#164d65] transition-all uppercase tracking-[0.2em] text-sm"
             >
-              Book Now
+              Book Your Cleaning Now
             </motion.button>
           </motion.div>
         )}
