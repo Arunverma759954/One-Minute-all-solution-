@@ -1,8 +1,12 @@
 "use client";
 
-import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-gradient-to-r from-black via-[#050A24] to-[#0A1A45] text-white pt-12 pb-6 relative">
       <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -144,13 +148,22 @@ export default function Footer() {
         </a>
       </div>
 
-      {/* DESKTOP FLOATING WHATSAPP BUTTON */}
+      {/* SCROLL TO TOP - RESPONSIVE POSITIONING */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-24 md:bottom-10 left-6 md:left-auto md:right-32 bg-[#1E5F7C] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all hover:bg-[#2EC3BD] hover:text-[#1E5F7C] z-[40] scroll-top-animate group"
+        title="Scroll to Top"
+      >
+        <FaArrowUp className="text-xl group-hover:scale-125 transition-transform" />
+      </button>
+
+      {/* DESKTOP FLOATING WHATSAPP BUTTON - NOW CIRCULAR & BLINKING */}
       <a
         href="https://wa.me/919958146822"
         target="_blank"
-        className="hidden md:flex fixed bottom-10 right-10 bg-[#25D366] text-white px-5 py-4 rounded-full shadow-lg items-center space-x-2 hover:bg-green-500 transition z-50"
+        className="hidden md:flex fixed bottom-10 right-10 bg-[#25D366] text-white w-20 h-20 rounded-full shadow-2xl items-center justify-center hover:bg-green-500 transition-all z-50 whatsapp-animate"
       >
-        <FaWhatsapp className="text-3xl" />
+        <FaWhatsapp className="text-4xl" />
       </a>
     </footer>
   );

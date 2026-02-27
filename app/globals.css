@@ -39,6 +39,7 @@ body {
     opacity: 0;
     transform: translateY(28px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -46,13 +47,25 @@ body {
 }
 
 @keyframes banner-shine {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 @keyframes banner-pulse-soft {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(255, 184, 0, 0); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(255, 184, 0, 0);
+  }
 }
 
 .banner-line-1 {
@@ -80,6 +93,7 @@ html {
 .home-banner-swiper .swiper-pagination {
   bottom: 24px !important;
 }
+
 .home-banner-swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -87,10 +101,12 @@ html {
   opacity: 1;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .home-banner-swiper .swiper-pagination-bullet:hover {
   background: rgba(255, 255, 255, 0.9);
   transform: scale(1.15);
 }
+
 .home-banner-swiper .swiper-pagination-bullet-active {
   background: var(--brand-accent-warm);
   width: 32px;
@@ -100,16 +116,38 @@ html {
 
 /* Page loader (initial load screen) */
 @keyframes loader-ring {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 @keyframes loader-progress {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(400%); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(400%);
+  }
 }
+
 @keyframes loader-dot-bounce {
-  0%, 80%, 100% { transform: scale(0.6); opacity: 0.6; }
-  40% { transform: scale(1.2); opacity: 1; }
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 
 .loader-logo-ring {
@@ -121,12 +159,58 @@ html {
   border-radius: 50%;
   animation: loader-ring 1s linear infinite;
 }
+
 .loader-progress-bar {
   animation: loader-progress 1.6s ease-in-out infinite;
   width: 40%;
 }
+
 .loader-dot {
   animation: loader-dot-bounce 1.2s ease-in-out infinite;
 }
-.loader-dot-2 { animation-delay: 0.15s; }
-.loader-dot-3 { animation-delay: 0.3s; }
+
+.loader-dot-2 {
+  animation-delay: 0.15s;
+}
+
+.loader-dot-3 {
+  animation-delay: 0.3s;
+}
+
+/* Floating Icons Animations */
+@keyframes whatsapp-blink {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-animate {
+  animation: whatsapp-blink 2s infinite;
+}
+
+@keyframes scroll-top-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.scroll-top-animate {
+  animation: scroll-top-pulse 2s infinite ease-in-out;
+}
