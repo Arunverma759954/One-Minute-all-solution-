@@ -90,7 +90,7 @@ export default function GuestFareBox() {
       <div className="mt-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         <div>
           <p className="text-xs text-gray-500">Total Fare (dummy)</p>
-          <p className="text-xl font-bold text-[#1E3A8A]">
+          <p className="text-xl font-bold text-[#1E5F7C]">
             ₹ {totalFare.toLocaleString("en-IN")}
           </p>
           <p className="text-xs text-gray-500">
@@ -101,7 +101,7 @@ export default function GuestFareBox() {
         <button
           type="button"
           onClick={handleSearch}
-          className="w-full md:w-auto bg-[#FACC15] text-black font-semibold px-6 py-3 rounded-full shadow-md hover:bg-yellow-400 transition"
+          className="w-full md:w-auto bg-[#2EC3BD] text-black font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#25a8a2] transition"
         >
           Search Flight
         </button>

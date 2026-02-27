@@ -10,16 +10,18 @@ import BlogSection from "@/components/home/BlogSection";
 
 export default function Home() {
   return (
-    <>
+    <main className="min-h-screen bg-white antialiased">
       <BannerSlider />
-      <Intro />
-      <AtithiHomeContent />
-      <HotelFacilities />
-      <LuxuryIntroSection />
-      <WhyChooseSection />
-      <RoomsGridSection />
-      <TestimonialSection />
-      <BlogSection />
-    </>
+      <div className="relative">
+        <Intro />
+        <AtithiHomeContent />
+        <HotelFacilities />
+        <LuxuryIntroSection />
+        <WhyChooseSection />
+        <RoomsGridSection />
+        <TestimonialSection />
+        <BlogSection />
+      </div>
+    </main>
   );
 }

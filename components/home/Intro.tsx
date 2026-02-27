@@ -1,63 +1,121 @@
 "use client";
-
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function IntroSection() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* LEFT IMAGE */}
-        <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-xl">
-          <Image
-            src="/assets/images/home-img1.jpg"
-            alt="Atithi Home - Hotel near Pratiksha Hospital Guwahati"
-            fill
-            className="object-cover"
-          />
-        </div>
+    <section className="py-20 bg-gray-50 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* RIGHT CONTENT */}
-        <div>
-          <h4 className="text-[#1E3A8A] font-semibold tracking-wider uppercase">
-            Your Trusted Stay in Guwahati
+        {/* LEFT CONTENT */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="order-2 lg:order-1"
+        >
+          <h4 className="text-[#1E5F7C] font-semibold tracking-wider uppercase flex items-center gap-2">
+            <span className="w-8 h-[2px] bg-[#2EC3BD]"></span>
+            Professional Cleaning Services Guwahati
           </h4>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-2 leading-tight">
-            Affordable Hotel near{" "}
-            <span className="text-[#FACC15]">Pratiksha Hospital Guwahati</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-4 leading-tight">
+            Expert Deep Cleaning for Your{" "}
+            <span className="text-[#2EC3BD]">Home & Office</span>
             <br className="hidden sm:block" />
-            <span className="text-[#1E3A8A]">— Open 24/7</span>
+            <span className="text-[#1E5F7C]">— One Mins Solutions</span>
           </h2>
 
-          <p className="mt-6 text-gray-600 leading-relaxed">
-            Welcome to Atithi Home, your trusted Hotel near Pratiksha Hospital Guwahati, offering comfortable, clean, and affordable accommodation in the heart of the city. Conveniently located at Alokpur, Near Pratiksha Hospital, VIP Road, Barbari, Guwahati – 781036, we provide a peaceful and secure stay experience for families, business travelers, and hospital visitors.
+          <p className="mt-8 text-gray-600 text-lg leading-relaxed">
+            Welcome to One Mins Cleaning Solutions (OMCAS), your premier choice for professional deep cleaning in Guwahati. We specialize in comprehensive home cleaning, kitchen deep cleaning, sofa sanitization, and corporate office maintenance.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-            If you are searching for a reliable Budget Hotel in Guwahati that combines comfort, convenience, and affordability, Atithi Home is the perfect choice.
+            Our expert team uses advanced equipment and eco-friendly cleaning agents to deliver high-quality results. Whether it's a routine cleanup or an intensive deep clean, we bring precision and care to every corner.
           </p>
 
           {/* STATS */}
-          <div className="mt-8 grid grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-              <h3 className="text-3xl font-bold text-[#1E3A8A]">24/7</h3>
-              <p className="text-gray-600 mt-1 text-sm">Check-in & Support</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-              <h3 className="text-3xl font-bold text-[#1E3A8A]">Budget</h3>
-              <p className="text-gray-600 mt-1 text-sm">Friendly Stay</p>
-            </div>
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-[#1E5F7C]/10 rounded-full flex items-center justify-center text-[#1E5F7C] text-2xl font-bold">100%</div>
+              <p className="text-gray-700 font-semibold">Satisfaction<br /><span className="text-gray-400 font-normal text-sm">Guarantee</span></p>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-[#1E5F7C]/10 rounded-full flex items-center justify-center text-[#1E5F7C] text-2xl font-bold">★</div>
+              <p className="text-gray-700 font-semibold">Expert<br /><span className="text-gray-400 font-normal text-sm">Trained Staff</span></p>
+            </motion.div>
           </div>
 
-          <div className="mt-10">
-            <a
+          <div className="mt-12 flex flex-wrap gap-4">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
               href="/contact"
-              className="inline-block bg-[#FACC15] text-black font-semibold px-6 py-3 rounded-full shadow-md hover:bg-yellow-400 transition duration-300"
+              className="px-10 py-4 bg-[#1E5F7C] text-white font-bold rounded-full shadow-lg hover:shadow-[#1E5F7C]/30 transition-all duration-300"
             >
-              Book Your Stay
-            </a>
+              Book Your Service
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href="tel:+918822453835"
+              className="px-10 py-4 border-2 border-[#1E5F7C] text-[#1E5F7C] font-bold rounded-full hover:bg-[#1E5F7C] hover:text-white transition-all duration-300"
+            >
+              Call Now
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
+
+        {/* RIGHT IMAGES - STAGGERED GRID */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="order-1 lg:order-2 relative"
+        >
+          <div className="relative grid grid-cols-2 gap-4 h-[600px]">
+            <div className="relative h-[80%] rounded-3xl overflow-hidden shadow-2xl self-start mt-8 border-4 border-white">
+              <Image
+                src="/assets/cl.jpg"
+                alt="Expert Cleaning Showcase"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-[80%] rounded-3xl overflow-hidden shadow-2xl self-end mb-8 border-4 border-white">
+              <Image
+                src="/assets/pexels-matilda-wormwood-4099471.jpg"
+                alt="Professional Team Working"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* FLOATING BADGE */}
+            <motion.div
+              animate={{ rotate: [12, 15, 12] }}
+              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#2EC3BD] rounded-full border-8 border-white shadow-2xl flex flex-col items-center justify-center text-center p-4 transform"
+            >
+              <span className="text-4xl">✨</span>
+              <p className="text-black font-extrabold text-sm leading-tight uppercase mt-1">
+                Zero Spot<br />Guarantee
+              </p>
+            </motion.div>
+          </div>
+
+          {/* DECORATIVE ELEMENT */}
+          <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#1E5F7C]/5 rounded-full -z-10 blur-3xl"></div>
+          <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#2EC3BD]/10 rounded-full -z-10 blur-3xl"></div>
+        </motion.div>
       </div>
     </section>
   );

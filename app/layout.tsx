@@ -4,24 +4,27 @@ import "./globals.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 import BookYourStayCTA from "@/components/home/BookYourStayCTA";
+import PageLoader from "@/components/ui/PageLoader";
+import BookNowPopupWrapper from "@/components/layouts/BookNowPopupWrapper";
 
 export const metadata = {
-  title: "Atithi Homestay Guwahati — Luxury Rooms & Premium Hospitality",
+  title: "1 Minute Cleaning Solutions Guwahati — Professional Deep Cleaning & Sanitization",
   description:
-    "Experience warm hospitality at Atithi Homestay Guwahati. Enjoy luxury rooms, modern amenities, spacious accommodation and a homely environment — perfect for families, couples and business travellers.",
+    "1 Minute Cleaning Solutions (OMCAS) offers professional deep cleaning, sofa sanitization, and office maintenance in Guwahati. Expert cleaning since 2018.",
   keywords:
-    "Atithi Homestay Guwahati, homestay in Guwahati, luxury rooms Guwahati, premium homestay Assam, Guwahati accommodation, family homestay Guwahati, business stay Guwahati, guest house Guwahati",
+    "1 Minute Cleaning Solutions Guwahati, OMCAS Guwahati, deep cleaning Guwahati, sofa cleaning Guwahati, office cleaning Guwahati, sanitization services Guwahati",
 
+  metadataBase: new URL("https://atithihome.com"),
   alternates: {
-    canonical: "https://atithihome.com", // 
+    canonical: "/",
   },
 
   openGraph: {
-    title: "Atithi Homestay Guwahati — Luxury Rooms",
+    title: "1 Minute Cleaning Solutions Guwahati — Deep Cleaning Experts",
     description:
-      "Premium hospitality, luxury rooms & homely environment in Guwahati.",
+      "Professional cleaning, sanitization & maintenance services in Guwahati.",
     url: "https://atithihome.com/",
-    siteName: "Atithi Homestay Guwahati",
+    siteName: "1 Minute Cleaning Solutions",
     images: [
       {
         url: "/assets/images/home-img1.jpg", // replace with your banner
@@ -44,17 +47,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {/* HEADER FIXED */}
-        <Header />
+        <BookNowPopupWrapper>
+          <PageLoader />
+          {/* HEADER FIXED */}
+          <Header />
 
-        {/* PAGE CONTENT */}
-        <main className="pt-16">{children}</main>
+          {/* PAGE CONTENT */}
+          <main className="pt-16">{children}</main>
 
-        {/* BOOK YOUR STAY - ABOVE FOOTER */}
-        <BookYourStayCTA />
+          {/* BOOK YOUR STAY - ABOVE FOOTER */}
+          <BookYourStayCTA />
 
-        {/* FOOTER */}
-        <Footer />
+          {/* FOOTER */}
+          <Footer />
+        </BookNowPopupWrapper>
       </body>
     </html>
   );

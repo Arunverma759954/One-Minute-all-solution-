@@ -2,26 +2,25 @@ import GalleryPage from "./GalleryPage";
 
 export const metadata = {
   title:
-    "Atithi Homestay Guwahati — Photo Gallery of Rooms & Facilities",
+    "Work Gallery | One Mins Cleaning Solutions Guwahati — Deep Cleaning in Action",
   description:
-    "Browse photos of Atithi Homestay Guwahati — see our comfortable rooms, modern amenities and warm hospitality. Get a real feel of our accommodation before you book.",
+    "See the OMCAS standard of hygiene. Browse our gallery featuring residential deep cleaning, office sanitization, and specialized cleaning projects across Guwahati.",
   keywords:
-    "Atithi Homestay Guwahati gallery, Atithi Homestay photos, Guwahati homestay images, hotel gallery Assam, guest house photos Guwahati, accommodation gallery Atithi, hotel rooms images Guwahati",
+    "cleaning gallery Guwahati, OMCAS work photos, deep cleaning before after, professional cleaning images, house cleaning gallery Assam, office sanitization photos",
 
-  // Canonical (optional but best for SEO)
   alternates: {
-    canonical: "https://www.atithihome.com/",
+    canonical: "https://www.atithihome.com/gallery",
   },
 
-  // ⭐ Short OG image (recommended)
+  // ⭐ Short OG image support
   openGraph: {
-    images: "/assets/gallery/g1.jpg",
+    images: "/assets/about.jpg",
   },
 
   // ⭐ Twitter large image card
   twitter: {
     card: "summary_large_image",
-    images: "/assets/gallery/g1.jpg",
+    images: "/assets/about.jpg",
   },
 };
 

@@ -63,7 +63,7 @@ export default function BlogPost() {
   return (
     <article className="min-h-screen bg-white text-gray-900 antialiased">
       {/* Hero banner for blog detail */}
-      <header className="relative bg-[#1E3A8A] text-white pt-20 pb-14 md:pb-18">
+      <header className="relative bg-[#1E5F7C] text-white pt-20 pb-14 md:pb-18">
         <div className="absolute inset-0 opacity-25">
           <Image
             src="/assets/images/home-img1.jpg"
@@ -73,7 +73,7 @@ export default function BlogPost() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A] to-[#1E3A8A]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E5F7C] via-[#1E5F7C] to-[#1E5F7C]/80" />
 
         <div className="relative max-w-7xl mx-auto px-6">
           <p className="text-sm text-white/80 mb-2">
@@ -87,7 +87,7 @@ export default function BlogPost() {
             /{" "}
             <span className="font-semibold">Detail</span>
           </p>
-          <div className="inline-flex items-center gap-2 bg-[#FACC15] text-[#1E3A8A] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
+          <div className="inline-flex items-center gap-2 bg-[#2EC3BD] text-[#1E5F7C] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
             <FaMapMarkerAlt /> Atithi Home Guwahati
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-3xl">
@@ -105,7 +105,7 @@ export default function BlogPost() {
         <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {highlights.map((h, i) => (
             <div key={i} className="text-center">
-              <div className="w-14 h-14 mx-auto rounded-2xl bg-[#1E3A8A] text-[#FACC15] flex items-center justify-center text-2xl mb-3">
+              <div className="w-14 h-14 mx-auto rounded-2xl bg-[#1E5F7C] text-[#2EC3BD] flex items-center justify-center text-2xl mb-3">
                 <h.icon />
               </div>
               <p className="font-bold text-lg text-gray-900">{h.value}</p>
@@ -123,11 +123,11 @@ export default function BlogPost() {
       {/* Intro – white background, drop cap */}
       <section className="relative pt-12 pb-12 md:pt-16 md:pb-16 bg-gray-50/80 rounded-2xl px-6 md:px-8">
         <div>
-          <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
+          <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
           <div className="mt-10">
             <p className="relative pl-20 md:pl-24 -indent-16 md:-indent-20 text-gray-700 leading-relaxed text-lg md:text-xl">
-              <span className="absolute left-0 text-8xl md:text-9xl font-black text-[#1E3A8A]/20 leading-none select-none">A</span>
+              <span className="absolute left-0 text-8xl md:text-9xl font-black text-[#1E5F7C]/20 leading-none select-none">A</span>
               medical trip is something you cannot negotiate at all! People who travel from their native place to receive top-tier treatment from nearby hospitals in Guwahati should take care of their stay before it&apos;s too late.
             </p>
             <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
@@ -136,8 +136,8 @@ export default function BlogPost() {
             <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
               It&apos;s Atithi Home Guwahati that offers the best accommodation for patients&apos; attendants at Pratiksha Hospital. Here, we understand that every traveler has unique needs, especially when health and well-being are the primary focus.
             </p>
-            <div className="mt-12 p-8 md:p-10 rounded-2xl bg-white border-l-4 border-[#1E3A8A] shadow-md">
-              <p className="text-xl md:text-2xl font-semibold text-[#1E3A8A] leading-relaxed">
+            <div className="mt-12 p-8 md:p-10 rounded-2xl bg-white border-l-4 border-[#1E5F7C] shadow-md">
+              <p className="text-xl md:text-2xl font-semibold text-[#1E5F7C] leading-relaxed">
                 Get 24/7 service, clean rooms, and a peaceful environment for patients and families at Atithi Home near Pratiksha Hospital – Book your budget stay today!
               </p>
             </div>
@@ -152,7 +152,7 @@ export default function BlogPost() {
             {/* LEFT: Enhanced image card */}
             <div className="relative h-80 lg:h-[420px]">
               {/* soft gradient behind */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#1E3A8A]/10 via-white to-[#FACC15]/10" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#1E5F7C]/10 via-white to-[#2EC3BD]/10" />
 
               {/* main image card */}
               <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
@@ -165,13 +165,13 @@ export default function BlogPost() {
                 <div className="absolute inset-0 bg-black/10" />
 
                 {/* Top-left badge */}
-                <div className="absolute top-4 left-4 bg-white/90 text-[#1E3A8A] text-xs font-semibold px-3 py-1 rounded-full shadow">
+                <div className="absolute top-4 left-4 bg-white/90 text-[#1E5F7C] text-xs font-semibold px-3 py-1 rounded-full shadow">
                   Near Pratiksha Hospital
                 </div>
 
                 {/* Bottom-left info chip */}
                 <div className="absolute bottom-4 left-4 bg-white/95 text-gray-800 text-xs md:text-sm px-3 py-2 rounded-xl shadow flex items-center gap-2">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#1E3A8A] text-white text-xs font-bold">
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#1E5F7C] text-white text-xs font-bold">
                     2–5
                   </span>
                   <span>Minutes walk / short drive</span>
@@ -189,7 +189,7 @@ export default function BlogPost() {
               </div>
             </div>
             <div>
-              <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>
+              <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 Why Proximity Matters: Hotel near Pratiksha Hospital Guwahati
               </h2>
@@ -198,8 +198,8 @@ export default function BlogPost() {
                 <p>That&apos;s where Atithi Home Guwahati comes in — the right place for patients and relatives to arrange a comfortable stay. We maintain discipline and hygiene for everyone who needs an emergency stay near Pratiksha Hospital.</p>
                 <p>We bridge the gap between the intensity of medical facilities and the comfort every attendant deserves. You get home-like comfort without delay throughout your stay.</p>
               </div>
-              <div className="mt-8 inline-flex items-center gap-3 bg-[#1E3A8A] text-white font-bold px-8 py-4 rounded-2xl">
-                <FaCheckCircle className="text-xl text-[#FACC15]" />
+              <div className="mt-8 inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
+                <FaCheckCircle className="text-xl text-[#2EC3BD]" />
                 Need a room just steps from the hospital? Book at Atithi Home now!
               </div>
             </div>
@@ -214,11 +214,11 @@ export default function BlogPost() {
             <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/95 rounded-xl shadow">
-              <p className="text-[#1E3A8A] font-bold">Budget-friendly • No hidden charges</p>
+              <p className="text-[#1E5F7C] font-bold">Budget-friendly • No hidden charges</p>
             </div>
           </div>
           <div className="bg-white p-10 md:p-14 lg:p-16 flex flex-col justify-center border border-gray-100">
-            <div className="flex items-center gap-2 text-[#1E3A8A] mb-4">
+            <div className="flex items-center gap-2 text-[#1E5F7C] mb-4">
               <FaRupeeSign className="text-2xl" />
               <span className="font-bold uppercase tracking-wider text-sm">Affordable Excellence</span>
             </div>
@@ -241,7 +241,7 @@ export default function BlogPost() {
         <div>
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="shrink-0 text-center lg:text-left">
-              <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E3A8A] bg-[#1E3A8A]/5 text-[#1E3A8A]">
+              <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E5F7C] bg-[#1E5F7C]/5 text-[#1E5F7C]">
                 <span className="text-5xl md:text-6xl font-black">24/7</span>
               </div>
             </div>
@@ -252,8 +252,8 @@ export default function BlogPost() {
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
                 Medical emergencies don&apos;t come with notice. At Atithi Home, employees take care of all policies — check-in and check-out — regardless of working hours. From search to checkout, we provide a seamless experience. Our 24/7 commitment is our promise to you and your family.
               </p>
-              <div className="inline-flex items-center gap-3 bg-[#1E3A8A] text-white font-bold px-8 py-4 rounded-2xl">
-                <FaClock className="text-xl text-[#FACC15]" />
+              <div className="inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
+                <FaClock className="text-xl text-[#2EC3BD]" />
                 Experience 24/7 hospitality — reserve your room today!
               </div>
             </div>
@@ -264,12 +264,12 @@ export default function BlogPost() {
       {/* Conclusion – white, big quote */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-[#1E3A8A] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
+          <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
           <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed">
             In the journey of health and recovery, the environment plays the right role. As the best budget hotel near Pratiksha Hospital Guwahati, we take care of our guests with experience and consultation.
           </p>
           <blockquote className="mt-12 relative p-10 bg-gray-50 rounded-2xl border border-gray-100">
-            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-5xl text-[#1E3A8A]/30 font-serif">&quot;</span>
+            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-5xl text-[#1E5F7C]/30 font-serif">&quot;</span>
             <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug px-4">
               Choose comfort. Choose affordability. Choose Atithi Home.
             </p>
@@ -281,7 +281,7 @@ export default function BlogPost() {
       <section className="py-12 md:py-16 px-6 bg-gray-50/80">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-10">
-            <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E3A8A]" />
+            <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E5F7C]" />
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">FAQs</h2>
           </div>
 
@@ -302,7 +302,7 @@ export default function BlogPost() {
                     }
                     className={`w-full flex items-center justify-between px-4 md:px-5 py-3 md:py-4 text-left transition ${
                       isOpen
-                        ? "bg-[#1E3A8A] text-white"
+                        ? "bg-[#1E5F7C] text-white"
                         : "bg-white text-gray-900 hover:bg-gray-50"
                     }`}
                   >
@@ -310,8 +310,8 @@ export default function BlogPost() {
                       <div
                         className={`w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center text-lg md:text-xl ${
                           isOpen
-                            ? "bg-white/15 text-[#FACC15]"
-                            : "bg-[#1E3A8A]/10 text-[#1E3A8A]"
+                            ? "bg-white/15 text-[#2EC3BD]"
+                            : "bg-[#1E5F7C]/10 text-[#1E5F7C]"
                         }`}
                       >
                         <Icon />
@@ -360,7 +360,7 @@ export default function BlogPost() {
                     value={enquiry.name}
                     onChange={handleEnquiryChange}
                     required
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] outline-none"
                     placeholder="Your name"
                   />
                 </div>
@@ -373,7 +373,7 @@ export default function BlogPost() {
                     value={enquiry.email}
                     onChange={handleEnquiryChange}
                     required
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] outline-none"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -385,7 +385,7 @@ export default function BlogPost() {
                     name="mobile"
                     value={enquiry.mobile}
                     onChange={handleEnquiryChange}
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] outline-none"
                     placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
@@ -397,7 +397,7 @@ export default function BlogPost() {
                     value={enquiry.message}
                     onChange={handleEnquiryChange}
                     rows={3}
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E3A8A]/30 focus:border-[#1E3A8A] outline-none resize-none"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] outline-none resize-none"
                     placeholder="Check-in date, number of guests, or any question..."
                   />
                 </div>
@@ -412,7 +412,7 @@ export default function BlogPost() {
                 <button
                   type="submit"
                   disabled={enquiryLoading}
-                  className="w-full bg-[#1E3A8A] text-white font-semibold py-3 rounded-xl hover:bg-[#10275c] transition disabled:opacity-70"
+                  className="w-full bg-[#1E5F7C] text-white font-semibold py-3 rounded-xl hover:bg-[#164d65] transition disabled:opacity-70"
                 >
                   {enquiryLoading ? "Sending..." : "Send Enquiry"}
                 </button>
@@ -436,7 +436,7 @@ export default function BlogPost() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#FACC15] text-gray-900 font-bold px-10 py-4 rounded-full text-lg shadow-md hover:bg-yellow-400 transition hover:scale-105"
+            className="inline-flex items-center gap-3 bg-[#2EC3BD] text-gray-900 font-bold px-10 py-4 rounded-full text-lg shadow-md hover:bg-[#25a8a2] transition hover:scale-105"
           >
             Book Now
             <span className="text-2xl">→</span>

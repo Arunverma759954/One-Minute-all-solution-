@@ -1,80 +1,120 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function BlogSection() {
   const blogs = [
     {
-      title: "Best Hotel near Pratiksha Hospital Guwahati",
-      desc: "Know why Atithi Home is the best, comfortable and budget-friendly stay near Pratiksha Hospital Guwahati.",
-      img: "/assets/img6.jpeg",
-      date: "16 Feb 2026",
-      href: "/blog/best-hotel-near-pratiksha-hospital-guwahati",
+      title: "The Ultimate Guide to Deep Cleaning Your Home in Guwahati",
+      desc: "Discover professional tips and tricks to keep your living space spotless and healthy with our comprehensive deep cleaning guide.",
+      img: "/assets/cl.jpg",
+      date: "27 Feb 2026",
+      href: "/blog",
     },
     {
-      title: "Top Attractions Near VIP Road & Barbari",
-      desc: "Explore nearby places when you stay at Atithi Home near Pratiksha Hospital and VIP Road.",
-      img: "/assets/img7.jpeg",
+      title: "Why Sofa Sanitization is Essential for a Healthy Home",
+      desc: "Learn about the hidden dust mites and allergens in your furniture and why professional sanitization is a must for your family.",
+      img: "/assets/a1.jpg",
       date: "Coming soon",
       href: "/blog",
     },
     {
-      title: "Tips for a Comfortable Medical Stay in Guwahati",
-      desc: "Simple tips to make your hospital visit and stay stress-free for you and your family.",
-      img: "/assets/img8.jpeg",
+      title: "5 Reasons to Hire Professional Kitchen Cleaners",
+      desc: "From degreasing to deep sanitization, see why expert kitchen cleaning is vital for food safety and a germ-free environment.",
+      img: "/assets/pexels-matilda-wormwood-4099471.jpg",
       date: "Coming soon",
       href: "/blog",
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        
+    <section className="py-20 md:py-24 bg-gray-50 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-6">
+
         {/* Heading */}
-        <div className="md:text-center mb-12">
-          <p className="text-lg tracking-widest text-[#C9A86A] font-semibold">
-            LATEST POSTS
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-14"
+        >
+          <p className="text-sm tracking-[0.25em] uppercase text-[#1E5F7C] font-semibold">
+            Latest Posts
           </p>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-900">
             Our Recent Articles
           </h2>
-        </div>
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: 80 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="mt-3 h-1 bg-[#2EC3BD] rounded-full mx-auto"
+          />
+        </motion.div>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-3 gap-10"
+        >
           {blogs.map((blog, idx) => (
-            <div
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ y: -10 }}
               key={idx}
-              className="bg-white shadow-xl rounded-xl overflow-hidden group"
+              className="bg-white shadow-xl rounded-xl overflow-hidden group border border-gray-100"
             >
               {/* Image */}
-              <div className="h-56 overflow-hidden">
+              <div className="h-56 overflow-hidden relative">
                 <img
                   src={blog.img}
                   alt={blog.title}
-                  className="h-full w-full object-cover group-hover:scale-110 transition-all duration-500"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <p className="text-sm text-[#C9A86A] font-semibold mb-2">
+                <p className="text-sm text-[#1E5F7C] font-semibold mb-2">
                   {blog.date}
                 </p>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#C9A86A] transition">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#1E5F7C] transition-colors leading-snug">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{blog.desc}</p>
+                <p className="text-gray-600 mb-4 line-clamp-3">{blog.desc}</p>
 
                 <Link
                   href={blog.href}
-                  className="text-[#C9A86A] font-semibold group-hover:underline inline-flex items-center gap-1"
+                  className="text-[#1E5F7C] font-bold group-hover:underline inline-flex items-center gap-1 transition-all"
                 >
-                  Read More <span>→</span>
+                  Read More <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

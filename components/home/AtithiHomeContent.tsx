@@ -1,95 +1,118 @@
 "use client";
 
 import Image from "next/image";
-import { FaClock, FaHospital, FaHome, FaMapMarkerAlt } from "react-icons/fa";
+import { FaClock, FaHospital, FaHome, FaMapMarkerAlt, FaShieldAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const guestSearches = [
-  "Best budget hotel near Pratiksha Hospital Guwahati",
-  "Affordable hotel near VIP Road Barbari",
-  "Cheap hotel in Guwahati near VIP Road",
-  "Comfortable stay near Pratiksha Hospital",
-  "Emergency stay near Pratiksha Hospital Guwahati",
-  "24/7 hotel near Pratiksha Hospital",
-  "Hotel open 24 hours in Guwahati",
+  "Professional deep cleaning Guwahati",
+  "Sofa cleaning services near me",
+  "Kitchen deep cleaning Guwahati",
+  "Office cleaning solutions Guwahati",
+  "Bathroom sanitization service",
+  "Carpet steam cleaning Guwahati",
+  "Eco-friendly cleaning services",
 ];
 
 const nearMeSearches = [
-  "Hotel near me",
-  "Budget hotel near me",
-  "Hotel open now in Guwahati",
-  "Stay near me VIP Road",
-  "Accommodation near Pratiksha Hospital",
+  "Cleaning services near me",
+  "Best deep cleaning in Guwahati",
+  "House cleaning service VIP Road",
+  "Sofa cleaners near Pratiksha Hospital",
+  "Office maintenance Guwahati",
 ];
 
 const brandSearches = [
-  "Atithi Home Guwahati",
-  "Atithi Hotel VIP Road",
-  "Atithi Home Barbari",
-  "Atithi Home near Pratiksha Hospital",
-  "Atithi Home contact number",
-  "Atithi Home reviews",
+  "One Mins Cleaning Solutions",
+  "OMCAS Guwahati",
+  "One Mins Cleaning contact",
+  "OMCAS deep cleaning reviews",
+  "Best cleaning experts Guwahati",
 ];
 
 export default function AtithiHomeContent() {
   return (
     <>
-      {/* ========== 24/7 CHECK-IN & EMERGENCY STAY ========== */}
+      {/* ========== PROFESSIONAL SANITIZATION & DEEP CLEANING ========== */}
       <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <div className="inline-flex items-center gap-2 bg-amber-50 text-[#1E3A8A] font-semibold px-4 py-2 rounded-full mb-4">
-              <FaClock className="text-[#FACC15]" />
-              Always Here for You
+        <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="order-2 md:order-1"
+          >
+            <div className="inline-flex items-center gap-2 bg-blue-50 text-[#1E5F7C] font-semibold px-4 py-2 rounded-full mb-4">
+              <FaShieldAlt className="text-[#1E5F7C]" />
+              Certified Sanitization Expert
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-black leading-tight">
-              24/7 Check-In & Emergency Stay Support
+              Hospital-Grade Sanitization & Deep Cleaning
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              We understand that hospital visits and travel emergencies can happen at any time. That&apos;s why we operate as a 24 Hours Hotel in Guwahati, offering flexible check-in and round-the-clock support.
+              At One Mins Cleaning Solutions (OMCAS), we prioritize your health and safety. Our deep cleaning services include hospital-grade sanitization, eco-friendly chemical treatments, and advanced equipment to ensure your home or office is germ-free.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              If you urgently need accommodation close to medical facilities, our location makes us one of the most preferred options for those searching for a Guest House near Pratiksha Hospital or a comfortable Stay near VIP Road Guwahati.
+              Whether it&apos;s a residential space or a corporate office, our trained professionals follow strict sanitization protocols to eliminate 99.9% of bacteria and viruses, leaving your environment fresh and safe.
             </p>
-          </div>
-          <div className="order-1 md:order-2 relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="order-1 md:order-2 relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl group"
+          >
             <Image
-              src="/assets/banner/b4.jpg"
-              alt="24/7 Hotel - Atithi Home Guwahati"
+              src="/assets/pexels-matilda-wormwood-4099471.jpg"
+              alt="Professional Sanitization - One Mins Cleaning Solutions"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-4 left-4 right-4 bg-black/60 text-white px-4 py-3 rounded-xl backdrop-blur-sm">
               <p className="font-semibold flex items-center gap-2">
-                <FaClock className="text-[#FACC15]" /> Open 24 hours — Check-in anytime
+                <FaShieldAlt className="text-[#1E5F7C]" /> Eco-Friendly & Safe Sanitization
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* ========== BUDGET ROOMS + GUESTS OFTEN FIND US ========== */}
+      {/* ========== COMPREHENSIVE CLEANING SOLUTIONS ========== */}
       <section className="py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl">
+        <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl group"
+          >
             <Image
-              src="/assets/img1.jpeg"
-              alt="AC Rooms in Guwahati - Atithi Home"
+              src="/assets/cl.jpg"
+              alt="Deep Cleaning Services - One Mins Cleaning Solutions"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className="text-3xl md:text-4xl font-extrabold text-black leading-tight">
-              Budget-Friendly & Well-Equipped Rooms
+              Comprehensive Cleaning & Maintenance Solutions
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              As a trusted Budget Hotel near Pratiksha Hospital, we provide clean and well-maintained AC Rooms in Guwahati designed for comfort and relaxation.
+              As Guwahati&apos;s leading cleaning experts, we offer a wide range of services tailored to your specific needs. From sofa sanitization to intensive kitchen degreasing, we ensure every corner of your space is pristine.
             </p>
-            <p className="mt-3 text-gray-700 font-medium">Guests often find us while searching for:</p>
+            <p className="mt-3 text-gray-700 font-medium">Our specialized services include:</p>
             <ul className="mt-3 space-y-2">
               {guestSearches.slice(0, 4).map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-600">
-                  <span className="text-[#FACC15] mt-1">•</span>
+                  <span className="text-[#1E5F7C] mt-1">•</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -97,94 +120,114 @@ export default function AtithiHomeContent() {
             <ul className="mt-2 space-y-2">
               {guestSearches.slice(4, 7).map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-600">
-                  <span className="text-[#FACC15] mt-1">•</span>
+                  <span className="text-[#1E5F7C] mt-1">•</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* ========== IDEAL FOR MEDICAL & EMERGENCY STAYS ========== */}
-      <section className="py-14 bg-[#1E3A8A] text-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      {/* ========== WHY CHOOSE ONE MINS SOLUTIONS? ========== */}
+      <section className="py-14 bg-[#1E5F7C] text-white overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-[1440px] mx-auto px-6 text-center"
+        >
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-4">
-            <FaHospital className="text-[#FACC15]" />
-            <span className="font-semibold">Ideal for Medical & Emergency Stays</span>
+            <FaShieldAlt className="text-[#2EC3BD]" />
+            <span className="font-semibold">Your Trusted Cleaning Partner</span>
           </div>
           <h2 className="text-2xl md:text-3xl font-extrabold mb-8">
-            Emergency stay near Pratiksha Hospital Guwahati • 24/7 hotel • Hotel open 24 hours in Guwahati
+            Expert Deep Cleaning • Trained Professionals • Eco-Friendly Products
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Emergency stay near Pratiksha Hospital",
-              "24/7 hotel near Pratiksha Hospital",
-              "Hotel open 24 hours in Guwahati",
-              "Medical stay Guwahati",
-              "Family stay near hospital",
+              "100% Satisfaction Guarantee",
+              "Advanced Steam Cleaning",
+              "Non-Toxic Chemicals",
+              "Verified Professionals",
+              "Flexible Scheduling",
             ].map((tag, i) => (
-              <span
+              <motion.span
+                whileHover={{ scale: 1.1, backgroundColor: "rgba(255, 255, 255, 0.25)" }}
                 key={i}
-                className="px-4 py-2 bg-white/15 hover:bg-white/25 rounded-full text-sm font-medium transition"
+                className="px-4 py-2 bg-white/15 rounded-full text-sm font-medium transition cursor-default"
               >
                 {tag}
-              </span>
+              </motion.span>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      {/* ========== MORE THAN JUST A HOTEL - HOMESTAY ========== */}
+      {/* ========== ADVANCED CLEANING TECHNOLOGY ========== */}
       <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full h-[340px] rounded-2xl overflow-hidden shadow-xl">
+        <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full h-[340px] rounded-2xl overflow-hidden shadow-xl group"
+          >
             <Image
-              src="/assets/a2.jpg"
-              alt="Homestay in Guwahati - Atithi Home"
+              src="/assets/pexels-matilda-wormwood-4099471.jpg"
+              alt="Advanced Cleaning Equipment - OMCAS"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
               <div className="flex items-center gap-2 text-white">
-                <FaHome className="text-2xl text-[#FACC15]" />
-                <span className="text-lg font-semibold">Homestay in Guwahati</span>
+                <FaShieldAlt className="text-2xl text-[#2EC3BD]" />
+                <span className="text-lg font-semibold">Latest Cleaning Tech</span>
               </div>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className="text-3xl md:text-4xl font-extrabold text-black leading-tight">
-              More Than Just a Hotel
+              Latest Equipment for Superior Results
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              While many guests find us when searching for a Hotel near Pratiksha Hospital Guwahati, we are also known as a welcoming Homestay in Guwahati offering personalized hospitality.
+              We use the latest high-pressure steam cleaners and industrial-grade vacuums to achieve a level of cleanliness that manual scrubbing simply can&apos;t match.
             </p>
             <p className="mt-3 text-gray-700 font-medium flex items-center gap-2">
-              <FaMapMarkerAlt className="text-[#1E3A8A]" />
-              Easy to Find – Convenient for &quot;Near Me&quot; Searches
+              <FaMapMarkerAlt className="text-[#1E5F7C]" />
+              Serving All Areas of Guwahati
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {nearMeSearches.map((term, i) => (
-                <span
+                <motion.span
+                  whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }}
                   key={i}
-                  className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm"
+                  className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm transition cursor-default"
                 >
                   {term}
-                </span>
+                </motion.span>
               ))}
             </div>
-            <p className="mt-4 text-gray-600 text-sm">Guests also search for us using:</p>
+            <p className="mt-4 text-gray-600 text-sm">Our most popular keywords:</p>
             <div className="mt-2 flex flex-wrap gap-2">
               {brandSearches.map((term, i) => (
-                <span
+                <motion.span
+                  whileHover={{ scale: 1.05, backgroundColor: "#eff6ff" }}
                   key={i}
-                  className="px-3 py-1.5 bg-amber-50 text-[#1E3A8A] rounded-lg text-sm font-medium"
+                  className="px-3 py-1.5 bg-blue-50 text-[#1E5F7C] rounded-lg text-sm font-medium transition cursor-default"
                 >
                   {term}
-                </span>
+                </motion.span>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

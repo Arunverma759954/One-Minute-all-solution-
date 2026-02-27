@@ -2,14 +2,14 @@ import AboutSection from "./AboutSection";
 
 export const metadata = {
   title:
-    "Atithi Homestay Guwahati — About Us & Our Hospitality",
+    "1 Minute Cleaning Solutions Guwahati — About Our Professional Deep Cleaning",
   description:
-    "Learn about Atithi Homestay in Guwahati: our commitment to clean, comfortable rooms, modern amenities, 24/7 support and warm hospitality — making every stay relaxing and memorable.",
+    "Discover One Mins Cleaning Solutions (OMCAS). Guwahati's most trusted experts for deep cleaning, sofa sanitization, and corporate office maintenance since 2018.",
   keywords:
-    "Atithi Homestay, Atithi Homestay Guwahati, about Atithi Homestay, Guwahati homestay, Guwahati hotel, comfortable stay Guwahati, premium homestay Assam, hotel hospitality Guwahati",
+    "about One Mins Cleaning Solutions, OMCAS Guwahati, professional cleaning Guwahati, deep cleaning experts Assam, reliable house cleaning Guwahati, cleaning company Guwahati",
 
   alternates: {
-    canonical: "https://www.atithihome.com/",
+    canonical: "https://atithihome.com/about",
   },
 
   // ⭐ Short OG image support
