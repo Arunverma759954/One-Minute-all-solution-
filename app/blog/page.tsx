@@ -4,9 +4,9 @@ import Link from "next/link";
 import { FaCalendarAlt, FaChevronRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Cleaning Insights & Tips | One Mins Cleaning Solutions Guwahati",
+  title: "Cleaning Insights & Tips | One Mins Cleaning Solutions Delhi NCR",
   description:
-    "Expert cleaning tips, deep sanitization guides, and professional advice for maintaining a healthy home and office in Guwahati by OMCAS.",
+    "Expert cleaning tips, deep sanitization guides, and professional advice for maintaining a healthy home and office in Delhi NCR by OMCAS.",
   alternates: {
     canonical: "https://www.atithihome.com/blog",
   },
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    slug: "ultimate-guide-deep-cleaning-guwahati",
-    title: "The Ultimate Guide to Deep Cleaning Your Home in Guwahati",
+    slug: "ultimate-guide-deep-cleaning-delhi-ncr",
+    title: "The Ultimate Guide to Deep Cleaning Your Home in Delhi NCR",
     date: "24 Feb 2026",
     excerpt:
-      "OMCAS experts explain why humidity in Guwahati can lead to mold and dust accumulation. Learn the professional techniques to keep your home pristine year-round.",
+      "OMCAS experts explain why Delhi NCR's pollution and dust can lead to allergen buildup. Learn the professional techniques to keep your home pristine year-round.",
     image: "/assets/cl.jpg",
     category: "Home Care"
   },

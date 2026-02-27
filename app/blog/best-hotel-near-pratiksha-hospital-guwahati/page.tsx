@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import BlogPost from "../BlogPost";
 
 export const metadata: Metadata = {
-  title: "Best Budget Hotel near Pratiksha Hospital Guwahati | Atithi Home",
+  title: "Best Cleaning Service in Delhi NCR | One Mins Cleaning Solutions (OMCAS)",
   description:
-    "Stay at Atithi Home, the best budget hotel near Pratiksha Hospital Guwahati. Enjoy 24/7 service, affordable rooms, and a short walk to the hospital. Book now!",
+    "OMCAS offers the best professional deep cleaning in Delhi NCR. Enjoy 24/7 service, eco-friendly solutions, and expert sanitization. Book now!",
   keywords:
-    "best budget hotel near Pratiksha Hospital Guwahati, hotel near Pratiksha Hospital, Atithi Home Guwahati, affordable stay near hospital, 24/7 hotel Guwahati, medical stay Guwahati",
+    "best cleaning service Delhi NCR, OMCAS Delhi NCR, professional deep cleaning Delhi, home cleaning Saket, office cleaning Delhi NCR, sanitization service Delhi",
   alternates: {
     canonical:
       "https://www.atithihome.com/blog/best-hotel-near-pratiksha-hospital-guwahati",

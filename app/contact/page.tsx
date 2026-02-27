@@ -2,11 +2,11 @@ import Contactsection from "./ContactSection";
 
 export const metadata = {
   title:
-    "Book an Appointment | One Mins Cleaning Solutions Guwahati — Contact Us",
+    "Book an Appointment | One Mins Cleaning Solutions Delhi NCR — Contact Us",
   description:
-    "Schedule your professional cleaning service in Guwahati. Get in touch with OMCAS for residential deep cleaning, office maintenance, and sanitization enquiries.",
+    "Schedule your professional cleaning service in Delhi NCR. Get in touch with OMCAS for residential deep cleaning, office maintenance, and sanitization enquiries.",
   keywords:
-    "contact One Mins Cleaning Solutions, book cleaning Guwahati, cleaning company contact, OMCAS phone number, cleaning service booking Guwahati, professional cleaners Guwahati",
+    "contact One Mins Cleaning Solutions, book cleaning Delhi NCR, cleaning company contact, OMCAS phone number, cleaning service booking Delhi NCR, professional cleaners Delhi NCR",
 
   alternates: {
     canonical: "https://www.atithihome.com/contact",

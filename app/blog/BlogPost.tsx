@@ -123,21 +123,21 @@ export default function BlogPost() {
             <section className="relative pt-12 pb-12 md:pt-16 md:pb-16 bg-gray-50/80 rounded-2xl px-6 md:px-8">
               <div>
                 <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
-                <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
+                <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why a Clean Environment Matters</h2>
                 <div className="mt-10">
                   <p className="relative pl-20 md:pl-24 -indent-16 md:-indent-20 text-gray-700 leading-relaxed text-lg md:text-xl">
                     <span className="absolute left-0 text-8xl md:text-9xl font-black text-[#1E5F7C]/20 leading-none select-none">A</span>
-                    medical trip is something you cannot negotiate at all! People who travel from their native place to receive top-tier treatment from nearby hospitals in Guwahati should take care of their stay before it&apos;s too late.
+                    clean environment is not a luxury — it's a necessity! Whether you live in a home or run a business in Delhi NCR, maintaining hygiene is fundamental to health, productivity, and peace of mind.
                   </p>
                   <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
-                    Finding the right and comfortable stay near Pratiksha hospital isn&apos;t difficult anymore. Whether you are a patient seeking affordable and compassionate care or a dedicated family member looking for the best budget hotel near Pratiksha Hospital, Guwahati, the priorities remain clear.
+                    Finding the right professional cleaning partner in Delhi NCR isn't difficult anymore. Whether you are a homeowner seeking deep cleaning or a business looking for regular office maintenance, OMCAS is here for you.
                   </p>
                   <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
-                    It&apos;s Atithi Home Guwahati that offers the best accommodation for patients&apos; attendants at Pratiksha Hospital. Here, we understand that every traveler has unique needs, especially when health and well-being are the primary focus.
+                    OMCAS — One Mins Cleaning Solutions — provides the best professional cleaning across Delhi NCR. We understand that every space has unique needs, and we tailor our approach accordingly.
                   </p>
                   <div className="mt-12 p-8 md:p-10 rounded-2xl bg-white border-l-4 border-[#1E5F7C] shadow-md">
                     <p className="text-xl md:text-2xl font-semibold text-[#1E5F7C] leading-relaxed">
-                      Get 24/7 service, clean rooms, and a peaceful environment for patients and families at Atithi Home near Pratiksha Hospital – Book your budget stay today!
+                      Ready for a spotless space? Contact OMCAS today for a free consultation and quote!
                     </p>
                   </div>
                 </div>
@@ -190,16 +190,16 @@ export default function BlogPost() {
                   <div>
                     <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>
                     <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                      Why Proximity Matters: Hotel near Pratiksha Hospital Guwahati
+                      Why Expert Cleaning Matters: Professional Services in Delhi NCR
                     </h2>
                     <div className="mt-8 space-y-4 text-gray-700 text-lg leading-relaxed">
-                      <p>In any medical emergency or scheduled treatment, it is wiser to avoid the city&apos;s heavy traffic. Being within walking distance or a short two-minute drive means you can be by your loved one&apos;s side at a moment&apos;s notice.</p>
-                      <p>That&apos;s where Atithi Home Guwahati comes in — the right place for patients and relatives to arrange a comfortable stay. We maintain discipline and hygiene for everyone who needs an emergency stay near Pratiksha Hospital.</p>
-                      <p>We bridge the gap between the intensity of medical facilities and the comfort every attendant deserves. You get home-like comfort without delay throughout your stay.</p>
+                      <p>In a busy city like Delhi NCR, germs and dust accumulate fast. Regular cleaning can miss deep-seated dirt in upholstery, carpets, and kitchen surfaces.</p>
+                      <p>That's where OMCAS comes in — the trusted partner for residents and businesses across Delhi NCR. We bring hospital-grade sanitization and professional equipment to every job.</p>
+                      <p>We bridge the gap between everyday cleaning and true hygiene excellence. Every space we clean is left healthier, safer, and fresher.</p>
                     </div>
                     <div className="mt-8 inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
                       <FaCheckCircle className="text-xl text-[#2EC3BD]" />
-                      Need a room just steps from the hospital? Book at Atithi Home now!
+                      Ready for a truly clean space? Book your OMCAS service today!
                     </div>
                   </div>
                 </div>
@@ -222,14 +222,14 @@ export default function BlogPost() {
                     <span className="font-bold uppercase tracking-wider text-sm">Affordable Excellence</span>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Best Budget Hotel near Pratiksha Hospital Guwahati
+                    Best Cleaning Service in Delhi NCR — OMCAS
                   </h2>
                   <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                    <p>Budget-friendly travel is a concern for many medical attendants. Atithi Home is the right hotel near Pratiksha Hospital — whether you are the patient or attendant, pricing won&apos;t affect your stay.</p>
-                    <p>We focus on essentials: hygienic bedding, power backup, high-speed Wi-Fi, and staff who understand hospital-related needs. Flexible booking, no hidden charges, honest hospitality you can rely on.</p>
+                    <p>Professional cleaning doesn't have to break the bank. OMCAS offers top-tier services across Delhi NCR at competitive prices, ensuring quality without compromise.</p>
+                    <p>We focus on essentials: hospital-grade sanitization, eco-friendly agents, and expert staff. Transparent pricing, no hidden charges, and honest service you can rely on.</p>
                   </div>
                   <div className="mt-8 p-6 bg-amber-50 rounded-2xl border border-amber-100">
-                    <p className="text-gray-900 font-bold text-lg">Save on your stay without sacrificing comfort. Check our rates and secure your booking today!</p>
+                    <p className="text-gray-900 font-bold text-lg">Experience premium cleaning without the premium price. Get your free quote from OMCAS today!</p>
                   </div>
                 </div>
               </div>
@@ -246,14 +246,14 @@ export default function BlogPost() {
                   </div>
                   <div className="flex-1">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                      Unmatched Service: Your 24/7 Hotel near Pratiksha Hospital
+                      Unmatched Service: Your 24/7 Cleaning Partner in Delhi NCR
                     </h2>
                     <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
-                      Medical emergencies don&apos;t come with notice. At Atithi Home, employees take care of all policies — check-in and check-out — regardless of working hours. From search to checkout, we provide a seamless experience. Our 24/7 commitment is our promise to you and your family.
+                      Cleaning needs can arise at any time. At OMCAS, we offer flexible scheduling and 24/7 support to ensure your space is always pristine when you need it. From urgent clean-ups to routine maintenance, we provide a seamless experience. Our 24/7 commitment is our promise to you.
                     </p>
                     <div className="inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
                       <FaClock className="text-xl text-[#2EC3BD]" />
-                      Experience 24/7 hospitality — reserve your room today!
+                      Need a clean space, anytime? Contact OMCAS for 24/7 service!
                     </div>
                   </div>
                 </div>
@@ -265,12 +265,12 @@ export default function BlogPost() {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
                 <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed">
-                  In the journey of health and recovery, the environment plays the right role. As the best budget hotel near Pratiksha Hospital Guwahati, we take care of our guests with experience and consultation.
+                  In the journey to a cleaner space, choosing the right partner makes all the difference. As Delhi NCR's most trusted cleaning experts, we bring experience, professionalism, and care to every service.
                 </p>
                 <blockquote className="mt-12 relative p-10 bg-gray-50 rounded-2xl border border-gray-100">
                   <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-5xl text-[#1E5F7C]/30 font-serif">&quot;</span>
                   <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug px-4">
-                    Choose comfort. Choose affordability. Choose Atithi Home.
+                    Choose hygiene. Choose professionalism. Choose OMCAS.
                   </p>
                 </blockquote>
               </div>
@@ -300,15 +300,15 @@ export default function BlogPost() {
                             setOpenFaqIndex(isOpen ? null : i)
                           }
                           className={`w-full flex items-center justify-between px-4 md:px-5 py-3 md:py-4 text-left transition ${isOpen
-                              ? "bg-[#1E5F7C] text-white"
-                              : "bg-white text-gray-900 hover:bg-gray-50"
+                            ? "bg-[#1E5F7C] text-white"
+                            : "bg-white text-gray-900 hover:bg-gray-50"
                             }`}
                         >
                           <div className="flex items-center gap-3 md:gap-4">
                             <div
                               className={`w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center text-lg md:text-xl ${isOpen
-                                  ? "bg-white/15 text-[#2EC3BD]"
-                                  : "bg-[#1E5F7C]/10 text-[#1E5F7C]"
+                                ? "bg-white/15 text-[#2EC3BD]"
+                                : "bg-[#1E5F7C]/10 text-[#1E5F7C]"
                                 }`}
                             >
                               <Icon />

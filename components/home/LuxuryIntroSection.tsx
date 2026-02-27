@@ -27,7 +27,7 @@ export default function LuxuryIntroSection() {
           <p className="text-gray-600 leading-relaxed">
             One Mins Cleaning Solutions (OMCAS) is dedicated to transforming your living and working environments into spotless, healthy sanctuaries. Our team of certified professionals ensures that every corner is meticulously cleaned using industry-leading protocols.
           </p>
-          <p className="text-gray-600 leading-relaxed">As Guwahati&apos;s most trusted Cleaning Experts, we focus on precision, reliability, and eco-friendly practices to meet the unique needs of our residential and commercial clients.</p>
+          <p className="text-gray-600 leading-relaxed">As Delhi NCR's most trusted Cleaning Experts, we focus on precision, reliability, and eco-friendly practices to meet the unique needs of our residential and commercial clients.</p>
 
           <motion.p
             initial={{ opacity: 0, scale: 0.95 }}
@@ -74,7 +74,7 @@ export default function LuxuryIntroSection() {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-[460px] group">
             <Image
               src="/assets/cl.jpg"
-              alt="Professional Cleaning Guwahati"
+              alt="Professional Cleaning Delhi NCR"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
             />

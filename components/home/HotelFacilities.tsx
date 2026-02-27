@@ -57,7 +57,7 @@ export default function FacilitiesSection3() {
           </h2>
 
           <p className="mt-4 text-gray-200">
-            One Mins Cleaning Solutions brings top-tier professional cleaning right to your doorstep in Guwahati. Our specialized approach ensures deep cleaning that goes beyond the surface, handling even the toughest grime and germs.
+            One Mins Cleaning Solutions brings top-tier professional cleaning right to your doorstep in Delhi NCR. Our specialized approach ensures deep cleaning that goes beyond the surface, handling even the toughest grime and germs.
           </p>
         </motion.div>
 

@@ -2,11 +2,11 @@ import ServiceSection from "./ServiceSection";
 
 export const metadata = {
   title:
-    "Professional Cleaning Services Guwahati — Residential & Commercial | OMCAS",
+    "Professional Cleaning Services Delhi NCR — Residential & Commercial | OMCAS",
   description:
-    "Explore our range of expert cleaning packages in Guwahati: Residential Deep Cleaning, Sofa & Carpet Sanitization, Corporate Office Maintenance, and Kitchen Cleaning.",
+    "Explore our range of expert cleaning packages in Delhi NCR: Residential Deep Cleaning, Sofa & Carpet Sanitization, Corporate Office Maintenance, and Kitchen Cleaning.",
   keywords:
-    "cleaning services Guwahati, deep cleaning Assam, house cleaning Guwahati, sofa cleaning Guwahati, kitchen sanitization, office cleaning services Guwahati, OMCAS services",
+    "cleaning services Delhi NCR, deep cleaning Delhi, house cleaning Delhi NCR, sofa cleaning Delhi NCR, kitchen sanitization, office cleaning services Delhi NCR, OMCAS services",
 
   alternates: {
     canonical: "https://www.atithihome.com/services",
