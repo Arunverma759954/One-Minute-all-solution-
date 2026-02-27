@@ -14,7 +14,7 @@ export const metadata = {
   keywords:
     "1 Minute Cleaning Solutions Delhi NCR, OMCAS Delhi NCR, deep cleaning Delhi NCR, sofa cleaning Delhi NCR, office cleaning Delhi NCR, sanitization services Delhi NCR",
 
-  metadataBase: new URL("https://atithihome.com"),
+  metadataBase: new URL("https://one-minute-all-solution.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -23,17 +23,28 @@ export const metadata = {
     title: "1 Minute Cleaning Solutions Delhi NCR — Deep Cleaning Experts",
     description:
       "Professional cleaning, sanitization & maintenance services in Delhi NCR.",
-    url: "https://atithihome.com/",
+    url: "https://one-minute-all-solution.vercel.app/",
     siteName: "1 Minute Cleaning Solutions",
     images: [
       {
-        url: "/assets/images/home-img1.jpg", // replace with your banner
+        url: "https://one-minute-all-solution.vercel.app/assets/about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "1 Minute Cleaning Solutions Delhi NCR",
       },
     ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "1 Minute Cleaning Solutions Delhi NCR — Deep Cleaning Experts",
+    description: "Professional cleaning, sanitization & maintenance services in Delhi NCR.",
+    images: ["https://one-minute-all-solution.vercel.app/assets/about.jpg"],
   },
 
   icons: {
-    icon: "/favicon.png", // <-- yaha aap favicon file dal diya
+    icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
