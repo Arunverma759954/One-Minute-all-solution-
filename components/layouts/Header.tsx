@@ -21,13 +21,18 @@ export default function Header() {
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
     if (menuOpen) {
-      document.body.style.overflow = "hidden";
+      html.style.overflow = "hidden";
+      body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset";
+      html.style.overflow = "";
+      body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = "unset";
+      html.style.overflow = "";
+      body.style.overflow = "";
     };
   }, [menuOpen]);
 
@@ -162,7 +167,7 @@ export default function Header() {
                   <Link
                     href={link.path}
                     onClick={handleLinkClick}
-                    className="block text-4xl font-black text-[#1E5F7C] tracking-tighter hover:text-[#2EC3BD] transition-colors"
+                    className="block text-2xl font-bold text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
                   >
                     {link.name}
                   </Link>

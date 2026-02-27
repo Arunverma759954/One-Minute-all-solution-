@@ -15,10 +15,15 @@ export default function BookNowPopup() {
     if (!isOpen) return;
     const handleEscape = (e: KeyboardEvent) => e.key === "Escape" && closeModal();
     document.addEventListener("keydown", handleEscape);
-    document.body.style.overflow = "hidden";
+    const html = document.documentElement;
+    const body = document.body;
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+
     return () => {
       document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "";
+      html.style.overflow = "";
+      body.style.overflow = "";
     };
   }, [isOpen, closeModal]);
 
