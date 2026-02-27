@@ -50,10 +50,10 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-xl py-0.5" : "bg-white shadow-md py-1"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-xl py-1" : "bg-white shadow-md py-3"
         } ${menuOpen ? "!bg-white !opacity-100" : ""}`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between min-h-[50px]">
+      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between min-h-[60px]">
 
         {/* LOGO – Left aligned and clear */}
         <Link href="/" className="flex items-center shrink-0">
@@ -62,7 +62,7 @@ export default function Header() {
             src="/assets/logooo.jpeg"
             alt="One Mins Cleaning Solutions Logo"
             className="block object-contain transition-all"
-            style={{ height: scrolled ? "35px" : "45px", width: "auto" }}
+            style={{ height: scrolled ? "45px" : "55px", width: "auto" }}
           />
         </Link>
 
