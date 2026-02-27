@@ -124,7 +124,7 @@ export default function BannerSlider() {
               transition={{ duration: 0.8, delay: 1.5 }}
               className="banner-line-2 mt-6 text-white/95 text-lg md:text-2xl max-w-2xl mx-auto font-medium [text-shadow:0_2px_10px_rgba(0,0,0,0.5)]"
             >
-              Guwahati's Premier Choice for Professional Deep Cleaning
+              OMCAS Premier Choice for Professional Deep Cleaning
               <br className="hidden md:block" />
               & Sanitization Since 2018.
             </motion.p>

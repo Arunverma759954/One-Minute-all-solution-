@@ -57,7 +57,7 @@ export default function AboutPage() {
             About <span className="text-[#2EC3BD]">Us</span>
           </h1>
           <p className="text-white mt-4 text-lg md:text-xl font-medium max-w-2xl mx-auto opacity-90">
-            "Guwahati's Most Trusted Deep Cleaning Professionals"
+            "OMCAS Most Trusted Deep Cleaning Professionals"
           </p>
         </motion.div>
       </section>

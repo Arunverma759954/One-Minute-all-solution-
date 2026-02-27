@@ -18,7 +18,7 @@ const posts = [
     title: "The Ultimate Guide to Deep Cleaning Your Home in Guwahati",
     date: "24 Feb 2026",
     excerpt:
-      "Guwahati's humidity can lead to mold and dust accumulation. Learn the professional techniques to keep your home pristine year-round.",
+      "OMCAS experts explain why humidity in Guwahati can lead to mold and dust accumulation. Learn the professional techniques to keep your home pristine year-round.",
     image: "/assets/cl.jpg",
     category: "Home Care"
   },
