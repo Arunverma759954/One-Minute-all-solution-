@@ -119,12 +119,8 @@ export default function ContactSection() {
               </div>
 
               <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
-                <div className="w-16 h-16 bg-[#2EC3BD]/10 text-[#1E5F7C] text-2xl flex items-center justify-center rounded-2xl mb-6">
-                  <FaMapMarkerAlt />
-                </div>
-                <h3 className="font-black text-gray-900 text-lg mb-2">Location</h3>
                 <p className="text-gray-600 font-bold">
-                  VIP Road, Guwahati, Assam
+                  Saket, Delhi NCR, New Delhi 110017
                 </p>
               </div>
 
@@ -259,7 +255,7 @@ export default function ContactSection() {
         <div className="max-w-[1440px] mx-auto px-6">
           <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-50 h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.175097033742!2d91.8159562!3d26.1584264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a592da94e80eb%3A0x8aca64c9f90a4424!2sAtithi%20guest%20house!5e0!3m2!1sen!2sin!4v1765096524482!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14021.944208226084!2d77.202302!3d28.5272803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1ff1e65593d%3A0xe542da6595e87a9!2sSaket%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1765096524482!5m2!1sen!2sin"
               className="w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
               style={{ border: 0 }}
               allowFullScreen

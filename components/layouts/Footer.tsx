@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaArrowUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -36,7 +37,7 @@ export default function Footer() {
 
           {/* GET DIRECTIONS BUTTON */}
           <a
-            href="https://www.google.com/maps/dir/?api=1&destination=VIP+Road+Guwahati+Assam"
+            href="https://www.google.com/maps/dir/?api=1&destination=Saket+New+Delhi+Delhi+110017"
             target="_blank"
             className="inline-block mt-5 bg-[#2EC3BD] text-black font-black px-6 py-2 rounded-full shadow-lg hover:bg-white hover:text-[#1E5F7C] transition-all duration-300 uppercase text-xs tracking-widest"
           >
@@ -48,11 +49,11 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4 text-[#2EC3BD]">Quick Links</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="/" className="hover:text-[#2EC3BD]">Home</a></li>
-            <li><a href="/about" className="hover:text-[#2EC3BD]">About Us</a></li>
-            <li><a href="/services" className="hover:text-[#2EC3BD]">Services</a></li>
-            <li><a href="/gallery" className="hover:text-[#2EC3BD]">Gallery</a></li>
-            <li><a href="/contact" className="hover:text-[#2EC3BD]">Contact</a></li>
+            <li><Link href="/" className="hover:text-[#2EC3BD]">Home</Link></li>
+            <li><Link href="/about" className="hover:text-[#2EC3BD]">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-[#2EC3BD]">Services</Link></li>
+            <li><Link href="/gallery" className="hover:text-[#2EC3BD]">Gallery</Link></li>
+            <li><Link href="/contact" className="hover:text-[#2EC3BD]">Contact</Link></li>
           </ul>
         </div>
 
@@ -62,7 +63,7 @@ export default function Footer() {
           <ul className="space-y-3 text-gray-300">
             <li>📞 Call Us Now: +91 9958146822</li>
             <li>✉️ <a href="mailto:oneminuteallsolution@gmail.com" className="hover:text-[#2EC3BD] transition">oneminuteallsolution@gmail.com</a></li>
-            <li className="whitespace-nowrap">📍 VIP Road, Guwahati, Assam 781036</li>
+            <li className="whitespace-nowrap">📍 Saket, Delhi NCR, New Delhi 110017</li>
             <li>🕒 Open 24/7</li>
           </ul>
         </div>

@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 import "swiper/css";
@@ -133,12 +134,12 @@ export default function BannerSlider() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.8 }}
             >
-              <a
+              <Link
                 href="/contact"
                 className="banner-cta mt-8 inline-block bg-[#2EC3BD] hover:bg-white hover:text-[#1E5F7C] text-black font-black text-lg px-10 py-4 rounded-full shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95 border-2 border-transparent hover:border-[#2EC3BD]"
               >
                 Get a Free Quote
-              </a>
+              </Link>
             </motion.div>
           </div>
         </motion.div>

@@ -62,7 +62,7 @@ export default function ServiceSection() {
             Specialized <br /><span className="text-[#2EC3BD]">Services</span>
           </h1>
           <p className="text-white mt-4 text-base md:text-xl font-bold opacity-90 max-w-xl border-l-4 border-[#2EC3BD] pl-6 py-2">
-            Tailored hygiene solutions for modern homes and professional offices across Guwahati.
+            Tailored hygiene solutions for modern homes and professional offices across Delhi NCR.
           </p>
         </motion.div>
       </section>

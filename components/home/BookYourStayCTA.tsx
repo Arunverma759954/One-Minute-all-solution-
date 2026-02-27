@@ -26,7 +26,7 @@ export default function BookYourStayCTA() {
                 Ready to Experience a <span className="text-[#2EC3BD]">Spotless</span> Space?
               </h2>
               <p className="mt-6 text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl">
-                Whether it's your home or office, One Mins Cleaning Solutions provides the most reliable and deep cleaning services across Guwahati. Book your slot now for a healthier environment.
+                Whether it's your home or office, One Mins Cleaning Solutions provides the most reliable and deep cleaning services across Delhi NCR. Book your slot now for a healthier environment.
               </p>
             </motion.div>
 

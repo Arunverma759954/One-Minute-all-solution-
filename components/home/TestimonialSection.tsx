@@ -24,7 +24,7 @@ export default function TestimonialSection() {
     {
       name: "Daniel Johnson",
       review:
-        "The best office cleaning service in Guwahati. They are meticulous and use high-quality products. 5 stars!",
+        "The best office cleaning service in Delhi NCR. They are meticulous and use high-quality products. 5 stars!",
       rating: 5,
     },
   ];

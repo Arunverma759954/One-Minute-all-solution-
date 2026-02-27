@@ -5,29 +5,29 @@ import { FaClock, FaHospital, FaHome, FaMapMarkerAlt, FaShieldAlt } from "react-
 import { motion } from "framer-motion";
 
 const guestSearches = [
-  "Professional deep cleaning Guwahati",
+  "Professional deep cleaning Delhi NCR",
   "Sofa cleaning services near me",
-  "Kitchen deep cleaning Guwahati",
-  "Office cleaning solutions Guwahati",
+  "Kitchen deep cleaning Delhi NCR",
+  "Office cleaning solutions Delhi NCR",
   "Bathroom sanitization service",
-  "Carpet steam cleaning Guwahati",
+  "Carpet steam cleaning Delhi NCR",
   "Eco-friendly cleaning services",
 ];
 
 const nearMeSearches = [
   "Cleaning services near me",
-  "Best deep cleaning in Guwahati",
-  "House cleaning service VIP Road",
-  "Sofa cleaners near Pratiksha Hospital",
-  "Office maintenance Guwahati",
+  "Best deep cleaning in Delhi NCR",
+  "House cleaning service Saket",
+  "Sofa cleaners Saket",
+  "Office maintenance Delhi NCR",
 ];
 
 const brandSearches = [
   "One Mins Cleaning Solutions",
-  "OMCAS Guwahati",
+  "OMCAS Delhi NCR",
   "One Mins Cleaning contact",
   "OMCAS deep cleaning reviews",
-  "Best cleaning experts Guwahati",
+  "Best cleaning experts Saket",
 ];
 
 export default function AtithiHomeContent() {
@@ -54,7 +54,7 @@ export default function AtithiHomeContent() {
               At One Mins Cleaning Solutions (OMCAS), we prioritize your health and safety. Our deep cleaning services include hospital-grade sanitization, eco-friendly chemical treatments, and advanced equipment to ensure your home or office is germ-free.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              Whether it&apos;s a residential space or a corporate office, our trained professionals follow strict sanitization protocols to eliminate 99.9% of bacteria and viruses, leaving your environment fresh and safe.
+              Serving Delhi NCR, our trained professionals follow strict sanitization protocols to eliminate 99.9% of bacteria and viruses, leaving your environment fresh and safe.
             </p>
           </motion.div>
           <motion.div
@@ -106,7 +106,7 @@ export default function AtithiHomeContent() {
               Comprehensive Cleaning & Maintenance Solutions
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              As Guwahati&apos;s leading cleaning experts, we offer a wide range of services tailored to your specific needs. From sofa sanitization to intensive kitchen degreasing, we ensure every corner of your space is pristine.
+              As Delhi NCR's leading cleaning experts, we offer a wide range of services tailored to your specific needs. From sofa sanitization to intensive kitchen degreasing, we ensure every corner of your space is pristine.
             </p>
             <p className="mt-3 text-gray-700 font-medium">Our specialized services include:</p>
             <ul className="mt-3 space-y-2">
@@ -202,7 +202,7 @@ export default function AtithiHomeContent() {
             </p>
             <p className="mt-3 text-gray-700 font-medium flex items-center gap-2">
               <FaMapMarkerAlt className="text-[#1E5F7C]" />
-              Serving All Areas of Guwahati
+              Serving All Areas of Delhi NCR
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {nearMeSearches.map((term, i) => (

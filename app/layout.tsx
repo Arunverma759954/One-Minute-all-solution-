@@ -8,11 +8,11 @@ import PageLoader from "@/components/ui/PageLoader";
 import BookNowPopupWrapper from "@/components/layouts/BookNowPopupWrapper";
 
 export const metadata = {
-  title: "1 Minute Cleaning Solutions Guwahati — Professional Deep Cleaning & Sanitization",
+  title: "1 Minute Cleaning Solutions Delhi NCR — Professional Deep Cleaning & Sanitization",
   description:
-    "1 Minute Cleaning Solutions (OMCAS) offers professional deep cleaning, sofa sanitization, and office maintenance in Guwahati. Expert cleaning since 2018.",
+    "1 Minute Cleaning Solutions (OMCAS) offers professional deep cleaning, sofa sanitization, and office maintenance in Delhi NCR. Expert cleaning since 2018.",
   keywords:
-    "1 Minute Cleaning Solutions Guwahati, OMCAS Guwahati, deep cleaning Guwahati, sofa cleaning Guwahati, office cleaning Guwahati, sanitization services Guwahati",
+    "1 Minute Cleaning Solutions Delhi NCR, OMCAS Delhi NCR, deep cleaning Delhi NCR, sofa cleaning Delhi NCR, office cleaning Delhi NCR, sanitization services Delhi NCR",
 
   metadataBase: new URL("https://atithihome.com"),
   alternates: {
@@ -20,9 +20,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "1 Minute Cleaning Solutions Guwahati — Deep Cleaning Experts",
+    title: "1 Minute Cleaning Solutions Delhi NCR — Deep Cleaning Experts",
     description:
-      "Professional cleaning, sanitization & maintenance services in Guwahati.",
+      "Professional cleaning, sanitization & maintenance services in Delhi NCR.",
     url: "https://atithihome.com/",
     siteName: "1 Minute Cleaning Solutions",
     images: [

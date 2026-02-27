@@ -15,11 +15,11 @@ import {
 } from "react-icons/fa";
 
 const faqs = [
-  { q: "Is Atithi Home a safe place for families?", a: "Yes, we prioritize safety with 24/7 staff availability and a quiet residential atmosphere.", icon: FaShieldAlt },
-  { q: "What makes you the best budget hotel near Pratiksha Hospital Guwahati?", a: "We offer a combination of proximity, professional service, and very competitive pricing.", icon: FaRupeeSign },
-  { q: "How far is Atithi Home from Pratiksha Hospital?", a: "Atithi Home is located within a few hundred meters, making it a 2-5 minute walk or a very short drive.", icon: FaMapMarkerAlt },
-  { q: "How do I book a room at Atithi Home?", a: "You can book directly through our website or contact our 24/7 front desk.", icon: FaPhone },
-  { q: "Is parking available for guests?", a: "Yes, we provide secure on-site parking for our guests.", icon: FaParking },
+  { q: "Is OMCAS a safe choice for my home?", a: "Yes, we prioritize safety with background-verified staff and eco-friendly cleaning agents.", icon: FaShieldAlt },
+  { q: "What makes you the best cleaning service in Delhi NCR?", a: "We offer a combination of hospital-grade sanitization, professional service, and transparent pricing.", icon: FaRupeeSign },
+  { q: "How far do you serve?", a: "OMCAS serves all of Delhi NCR including Saket, South Delhi, and surrounding areas.", icon: FaMapMarkerAlt },
+  { q: "How do I book a cleaning session?", a: "You can book directly through our website or contact our 24/7 support line.", icon: FaPhone },
+  { q: "Do you bring your own equipment?", a: "Yes, we provide all industrial-grade equipment and specialized cleaning agents.", icon: FaParking },
 ];
 
 const highlights = [
@@ -88,14 +88,13 @@ export default function BlogPost() {
             <span className="font-semibold">Detail</span>
           </p>
           <div className="inline-flex items-center gap-2 bg-[#2EC3BD] text-[#1E5F7C] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
-            <FaMapMarkerAlt /> Atithi Home Guwahati
+            <FaMapMarkerAlt /> OMCAS Delhi NCR
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-3xl">
-            Best Hotel near Pratiksha Hospital Guwahati for Comfortable & Affordable Stay
+            Best Cleaning Service in Delhi NCR for Your Home & Office
           </h1>
           <p className="mt-4 text-base md:text-lg text-white/90 mb-5 max-w-2xl">
-            Stay at Atithi Home — 24/7 service, affordable rooms, and a short walk to Pratiksha Hospital
-            Guwahati. Know why guests choose us for their medical and family stays.
+            Experience One Mins Cleaning Solutions (OMCAS) — 24/7 service, eco-friendly deep cleaning, and expert sanitization across Delhi NCR.
           </p>
         </div>
       </header>
@@ -120,226 +119,223 @@ export default function BlogPost() {
         <div className="grid lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 pb-8 md:pb-10">
           {/* LEFT: Main content */}
           <div>
-      {/* Intro – white background, drop cap */}
-      <section className="relative pt-12 pb-12 md:pt-16 md:pb-16 bg-gray-50/80 rounded-2xl px-6 md:px-8">
-        <div>
-          <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
-          <div className="mt-10">
-            <p className="relative pl-20 md:pl-24 -indent-16 md:-indent-20 text-gray-700 leading-relaxed text-lg md:text-xl">
-              <span className="absolute left-0 text-8xl md:text-9xl font-black text-[#1E5F7C]/20 leading-none select-none">A</span>
-              medical trip is something you cannot negotiate at all! People who travel from their native place to receive top-tier treatment from nearby hospitals in Guwahati should take care of their stay before it&apos;s too late.
-            </p>
-            <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
-              Finding the right and comfortable stay near Pratiksha hospital isn&apos;t difficult anymore. Whether you are a patient seeking affordable and compassionate care or a dedicated family member looking for the best budget hotel near Pratiksha Hospital, Guwahati, the priorities remain clear.
-            </p>
-            <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
-              It&apos;s Atithi Home Guwahati that offers the best accommodation for patients&apos; attendants at Pratiksha Hospital. Here, we understand that every traveler has unique needs, especially when health and well-being are the primary focus.
-            </p>
-            <div className="mt-12 p-8 md:p-10 rounded-2xl bg-white border-l-4 border-[#1E5F7C] shadow-md">
-              <p className="text-xl md:text-2xl font-semibold text-[#1E5F7C] leading-relaxed">
-                Get 24/7 service, clean rooms, and a peaceful environment for patients and families at Atithi Home near Pratiksha Hospital – Book your budget stay today!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Proximity – image with LIGHT overlay, text on white card over it */}
-      <section className="relative py-10 md:py-14 px-6 overflow-hidden bg-gray-50/80 rounded-2xl">
-        <div>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* LEFT: Enhanced image card */}
-            <div className="relative h-80 lg:h-[420px]">
-              {/* soft gradient behind */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#1E5F7C]/10 via-white to-[#2EC3BD]/10" />
-
-              {/* main image card */}
-              <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
-                <Image
-                  src="/assets/banner/b4.jpg"
-                  alt="Hotel near Pratiksha Hospital"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/10" />
-
-                {/* Top-left badge */}
-                <div className="absolute top-4 left-4 bg-white/90 text-[#1E5F7C] text-xs font-semibold px-3 py-1 rounded-full shadow">
-                  Near Pratiksha Hospital
-                </div>
-
-                {/* Bottom-left info chip */}
-                <div className="absolute bottom-4 left-4 bg-white/95 text-gray-800 text-xs md:text-sm px-3 py-2 rounded-xl shadow flex items-center gap-2">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#1E5F7C] text-white text-xs font-bold">
-                    2–5
-                  </span>
-                  <span>Minutes walk / short drive</span>
+            {/* Intro – white background, drop cap */}
+            <section className="relative pt-12 pb-12 md:pt-16 md:pb-16 bg-gray-50/80 rounded-2xl px-6 md:px-8">
+              <div>
+                <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Introduction</span>
+                <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Why your stay matters</h2>
+                <div className="mt-10">
+                  <p className="relative pl-20 md:pl-24 -indent-16 md:-indent-20 text-gray-700 leading-relaxed text-lg md:text-xl">
+                    <span className="absolute left-0 text-8xl md:text-9xl font-black text-[#1E5F7C]/20 leading-none select-none">A</span>
+                    medical trip is something you cannot negotiate at all! People who travel from their native place to receive top-tier treatment from nearby hospitals in Guwahati should take care of their stay before it&apos;s too late.
+                  </p>
+                  <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
+                    Finding the right and comfortable stay near Pratiksha hospital isn&apos;t difficult anymore. Whether you are a patient seeking affordable and compassionate care or a dedicated family member looking for the best budget hotel near Pratiksha Hospital, Guwahati, the priorities remain clear.
+                  </p>
+                  <p className="mt-6 text-gray-700 leading-relaxed text-lg md:text-xl">
+                    It&apos;s Atithi Home Guwahati that offers the best accommodation for patients&apos; attendants at Pratiksha Hospital. Here, we understand that every traveler has unique needs, especially when health and well-being are the primary focus.
+                  </p>
+                  <div className="mt-12 p-8 md:p-10 rounded-2xl bg-white border-l-4 border-[#1E5F7C] shadow-md">
+                    <p className="text-xl md:text-2xl font-semibold text-[#1E5F7C] leading-relaxed">
+                      Get 24/7 service, clean rooms, and a peaceful environment for patients and families at Atithi Home near Pratiksha Hospital – Book your budget stay today!
+                    </p>
+                  </div>
                 </div>
               </div>
+            </section>
 
-              {/* small secondary photo overlay for richer UI */}
-              <div className="hidden sm:block absolute -bottom-4 right-4 w-32 h-24 md:w-40 md:h-28 rounded-2xl overflow-hidden shadow-xl border border-white bg-white">
-                <Image
-                  src="/assets/img1.jpeg"
-                  alt="Comfortable rooms at Atithi Home"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div>
-              <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>
-              <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                Why Proximity Matters: Hotel near Pratiksha Hospital Guwahati
-              </h2>
-              <div className="mt-8 space-y-4 text-gray-700 text-lg leading-relaxed">
-                <p>In any medical emergency or scheduled treatment, it is wiser to avoid the city&apos;s heavy traffic. Being within walking distance or a short two-minute drive means you can be by your loved one&apos;s side at a moment&apos;s notice.</p>
-                <p>That&apos;s where Atithi Home Guwahati comes in — the right place for patients and relatives to arrange a comfortable stay. We maintain discipline and hygiene for everyone who needs an emergency stay near Pratiksha Hospital.</p>
-                <p>We bridge the gap between the intensity of medical facilities and the comfort every attendant deserves. You get home-like comfort without delay throughout your stay.</p>
-              </div>
-              <div className="mt-8 inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
-                <FaCheckCircle className="text-xl text-[#2EC3BD]" />
-                Need a room just steps from the hospital? Book at Atithi Home now!
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Why Proximity – image with LIGHT overlay, text on white card over it */}
+            <section className="relative py-10 md:py-14 px-6 overflow-hidden bg-gray-50/80 rounded-2xl">
+              <div>
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  {/* LEFT: Enhanced image card */}
+                  <div className="relative h-80 lg:h-[420px]">
+                    {/* soft gradient behind */}
+                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#1E5F7C]/10 via-white to-[#2EC3BD]/10" />
 
-      {/* Affordable – bento: image + white text side */}
-      <section className="py-10 md:py-14 px-6 bg-white rounded-2xl">
-        <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
-          <div className="relative h-80 lg:h-auto lg:min-h-[520px]">
-            <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/95 rounded-xl shadow">
-              <p className="text-[#1E5F7C] font-bold">Budget-friendly • No hidden charges</p>
-            </div>
-          </div>
-          <div className="bg-white p-10 md:p-14 lg:p-16 flex flex-col justify-center border border-gray-100">
-            <div className="flex items-center gap-2 text-[#1E5F7C] mb-4">
-              <FaRupeeSign className="text-2xl" />
-              <span className="font-bold uppercase tracking-wider text-sm">Affordable Excellence</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Best Budget Hotel near Pratiksha Hospital Guwahati
-            </h2>
-            <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-              <p>Budget-friendly travel is a concern for many medical attendants. Atithi Home is the right hotel near Pratiksha Hospital — whether you are the patient or attendant, pricing won&apos;t affect your stay.</p>
-              <p>We focus on essentials: hygienic bedding, power backup, high-speed Wi-Fi, and staff who understand hospital-related needs. Flexible booking, no hidden charges, honest hospitality you can rely on.</p>
-            </div>
-            <div className="mt-8 p-6 bg-amber-50 rounded-2xl border border-amber-100">
-              <p className="text-gray-900 font-bold text-lg">Save on your stay without sacrificing comfort. Check our rates and secure your booking today!</p>
-            </div>
-          </div>
-        </div>
-      </section>
+                    {/* main image card */}
+                    <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
+                      <Image
+                        src="/assets/banner/b4.jpg"
+                        alt="Hotel near Pratiksha Hospital"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/10" />
 
-      {/* 24/7 – white section with blue accent strip */}
-      <section className="py-10 md:py-14 px-6 bg-gray-50/80 rounded-2xl">
-        <div>
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            <div className="shrink-0 text-center lg:text-left">
-              <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E5F7C] bg-[#1E5F7C]/5 text-[#1E5F7C]">
-                <span className="text-5xl md:text-6xl font-black">24/7</span>
-              </div>
-            </div>
-            <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Unmatched Service: Your 24/7 Hotel near Pratiksha Hospital
-              </h2>
-              <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
-                Medical emergencies don&apos;t come with notice. At Atithi Home, employees take care of all policies — check-in and check-out — regardless of working hours. From search to checkout, we provide a seamless experience. Our 24/7 commitment is our promise to you and your family.
-              </p>
-              <div className="inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
-                <FaClock className="text-xl text-[#2EC3BD]" />
-                Experience 24/7 hospitality — reserve your room today!
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Conclusion – white, big quote */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
-          <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed">
-            In the journey of health and recovery, the environment plays the right role. As the best budget hotel near Pratiksha Hospital Guwahati, we take care of our guests with experience and consultation.
-          </p>
-          <blockquote className="mt-12 relative p-10 bg-gray-50 rounded-2xl border border-gray-100">
-            <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-5xl text-[#1E5F7C]/30 font-serif">&quot;</span>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug px-4">
-              Choose comfort. Choose affordability. Choose Atithi Home.
-            </p>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* FAQs – accordion dropdown */}
-      <section className="py-12 md:py-16 px-6 bg-gray-50/80">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-4 mb-10">
-            <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E5F7C]" />
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">FAQs</h2>
-          </div>
-
-          <div className="space-y-3">
-            {faqs.map((faq, i) => {
-              const Icon = faq.icon;
-              const isOpen = openFaqIndex === i;
-
-              return (
-                <div
-                  key={i}
-                  className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
-                >
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setOpenFaqIndex(isOpen ? null : i)
-                    }
-                    className={`w-full flex items-center justify-between px-4 md:px-5 py-3 md:py-4 text-left transition ${
-                      isOpen
-                        ? "bg-[#1E5F7C] text-white"
-                        : "bg-white text-gray-900 hover:bg-gray-50"
-                    }`}
-                  >
-                    <div className="flex items-center gap-3 md:gap-4">
-                      <div
-                        className={`w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center text-lg md:text-xl ${
-                          isOpen
-                            ? "bg-white/15 text-[#2EC3BD]"
-                            : "bg-[#1E5F7C]/10 text-[#1E5F7C]"
-                        }`}
-                      >
-                        <Icon />
+                      {/* Top-left badge */}
+                      <div className="absolute top-4 left-4 bg-white/90 text-[#1E5F7C] text-xs font-semibold px-3 py-1 rounded-full shadow">
+                        Near Pratiksha Hospital
                       </div>
-                      <span className="font-semibold text-sm md:text-base">
-                        {faq.q}
-                      </span>
-                    </div>
-                    <span
-                      className={`ml-3 text-lg md:text-xl transition-transform ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
-                    >
-                      ▾
-                    </span>
-                  </button>
 
-                  {isOpen && (
-                    <div className="px-4 md:px-5 pb-4 md:pb-5 pt-3 text-sm md:text-base text-gray-700 leading-relaxed bg-white">
-                      {faq.a}
+                      {/* Bottom-left info chip */}
+                      <div className="absolute bottom-4 left-4 bg-white/95 text-gray-800 text-xs md:text-sm px-3 py-2 rounded-xl shadow flex items-center gap-2">
+                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#1E5F7C] text-white text-xs font-bold">
+                          2–5
+                        </span>
+                        <span>Minutes walk / short drive</span>
+                      </div>
                     </div>
-                  )}
+
+                    {/* small secondary photo overlay for richer UI */}
+                    <div className="hidden sm:block absolute -bottom-4 right-4 w-32 h-24 md:w-40 md:h-28 rounded-2xl overflow-hidden shadow-xl border border-white bg-white">
+                      <Image
+                        src="/assets/img1.jpeg"
+                        alt="Comfortable rooms at Atithi Home"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Why choose us</span>
+                    <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                      Why Proximity Matters: Hotel near Pratiksha Hospital Guwahati
+                    </h2>
+                    <div className="mt-8 space-y-4 text-gray-700 text-lg leading-relaxed">
+                      <p>In any medical emergency or scheduled treatment, it is wiser to avoid the city&apos;s heavy traffic. Being within walking distance or a short two-minute drive means you can be by your loved one&apos;s side at a moment&apos;s notice.</p>
+                      <p>That&apos;s where Atithi Home Guwahati comes in — the right place for patients and relatives to arrange a comfortable stay. We maintain discipline and hygiene for everyone who needs an emergency stay near Pratiksha Hospital.</p>
+                      <p>We bridge the gap between the intensity of medical facilities and the comfort every attendant deserves. You get home-like comfort without delay throughout your stay.</p>
+                    </div>
+                    <div className="mt-8 inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
+                      <FaCheckCircle className="text-xl text-[#2EC3BD]" />
+                      Need a room just steps from the hospital? Book at Atithi Home now!
+                    </div>
+                  </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+              </div>
+            </section>
+
+            {/* Affordable – bento: image + white text side */}
+            <section className="py-10 md:py-14 px-6 bg-white rounded-2xl">
+              <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+                <div className="relative h-80 lg:h-auto lg:min-h-[520px]">
+                  <Image src="/assets/img1.jpeg" alt="Rooms" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/95 rounded-xl shadow">
+                    <p className="text-[#1E5F7C] font-bold">Budget-friendly • No hidden charges</p>
+                  </div>
+                </div>
+                <div className="bg-white p-10 md:p-14 lg:p-16 flex flex-col justify-center border border-gray-100">
+                  <div className="flex items-center gap-2 text-[#1E5F7C] mb-4">
+                    <FaRupeeSign className="text-2xl" />
+                    <span className="font-bold uppercase tracking-wider text-sm">Affordable Excellence</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Best Budget Hotel near Pratiksha Hospital Guwahati
+                  </h2>
+                  <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                    <p>Budget-friendly travel is a concern for many medical attendants. Atithi Home is the right hotel near Pratiksha Hospital — whether you are the patient or attendant, pricing won&apos;t affect your stay.</p>
+                    <p>We focus on essentials: hygienic bedding, power backup, high-speed Wi-Fi, and staff who understand hospital-related needs. Flexible booking, no hidden charges, honest hospitality you can rely on.</p>
+                  </div>
+                  <div className="mt-8 p-6 bg-amber-50 rounded-2xl border border-amber-100">
+                    <p className="text-gray-900 font-bold text-lg">Save on your stay without sacrificing comfort. Check our rates and secure your booking today!</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 24/7 – white section with blue accent strip */}
+            <section className="py-10 md:py-14 px-6 bg-gray-50/80 rounded-2xl">
+              <div>
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                  <div className="shrink-0 text-center lg:text-left">
+                    <div className="inline-flex items-center justify-center w-36 h-36 rounded-full border-4 border-[#1E5F7C] bg-[#1E5F7C]/5 text-[#1E5F7C]">
+                      <span className="text-5xl md:text-6xl font-black">24/7</span>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                      Unmatched Service: Your 24/7 Hotel near Pratiksha Hospital
+                    </h2>
+                    <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
+                      Medical emergencies don&apos;t come with notice. At Atithi Home, employees take care of all policies — check-in and check-out — regardless of working hours. From search to checkout, we provide a seamless experience. Our 24/7 commitment is our promise to you and your family.
+                    </p>
+                    <div className="inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
+                      <FaClock className="text-xl text-[#2EC3BD]" />
+                      Experience 24/7 hospitality — reserve your room today!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Conclusion – white, big quote */}
+            <section className="py-12 md:py-16 px-6 bg-white">
+              <div className="max-w-4xl mx-auto text-center">
+                <span className="text-[#1E5F7C] font-bold tracking-[0.2em] uppercase text-sm">Conclusion</span>
+                <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed">
+                  In the journey of health and recovery, the environment plays the right role. As the best budget hotel near Pratiksha Hospital Guwahati, we take care of our guests with experience and consultation.
+                </p>
+                <blockquote className="mt-12 relative p-10 bg-gray-50 rounded-2xl border border-gray-100">
+                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-5xl text-[#1E5F7C]/30 font-serif">&quot;</span>
+                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug px-4">
+                    Choose comfort. Choose affordability. Choose Atithi Home.
+                  </p>
+                </blockquote>
+              </div>
+            </section>
+
+            {/* FAQs – accordion dropdown */}
+            <section className="py-12 md:py-16 px-6 bg-gray-50/80">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center gap-4 mb-10">
+                  <FaQuestionCircle className="text-3xl md:text-4xl text-[#1E5F7C]" />
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">FAQs</h2>
+                </div>
+
+                <div className="space-y-3">
+                  {faqs.map((faq, i) => {
+                    const Icon = faq.icon;
+                    const isOpen = openFaqIndex === i;
+
+                    return (
+                      <div
+                        key={i}
+                        className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+                      >
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setOpenFaqIndex(isOpen ? null : i)
+                          }
+                          className={`w-full flex items-center justify-between px-4 md:px-5 py-3 md:py-4 text-left transition ${isOpen
+                              ? "bg-[#1E5F7C] text-white"
+                              : "bg-white text-gray-900 hover:bg-gray-50"
+                            }`}
+                        >
+                          <div className="flex items-center gap-3 md:gap-4">
+                            <div
+                              className={`w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center text-lg md:text-xl ${isOpen
+                                  ? "bg-white/15 text-[#2EC3BD]"
+                                  : "bg-[#1E5F7C]/10 text-[#1E5F7C]"
+                                }`}
+                            >
+                              <Icon />
+                            </div>
+                            <span className="font-semibold text-sm md:text-base">
+                              {faq.q}
+                            </span>
+                          </div>
+                          <span
+                            className={`ml-3 text-lg md:text-xl transition-transform ${isOpen ? "rotate-180" : ""
+                              }`}
+                          >
+                            ▾
+                          </span>
+                        </button>
+
+                        {isOpen && (
+                          <div className="px-4 md:px-5 pb-4 md:pb-5 pt-3 text-sm md:text-base text-gray-700 leading-relaxed bg-white">
+                            {faq.a}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
 
           </div>
 

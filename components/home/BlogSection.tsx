@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function BlogSection() {
   const blogs = [
     {
-      title: "The Ultimate Guide to Deep Cleaning Your Home in Guwahati",
+      title: "The Ultimate Guide to Deep Cleaning Your Home in Delhi NCR",
       desc: "Discover professional tips and tricks to keep your living space spotless and healthy with our comprehensive deep cleaning guide.",
       img: "/assets/cl.jpg",
       date: "27 Feb 2026",

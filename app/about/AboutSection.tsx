@@ -98,7 +98,7 @@ export default function AboutPage() {
               Providing <span className="text-[#1E5F7C]">1 Minute</span> Solutions for a Spotless Space
             </h2>
             <p className="mt-8 text-gray-600 text-lg leading-relaxed">
-              One Mins Cleaning Solutions (OMCAS) was founded with a singular mission: to provide the highest standard of professional cleaning and sanitization services in Guwahati. We understand that a clean environment is fundamental to health, productivity, and happiness.
+              One Mins Cleaning Solutions (OMCAS) was founded with a singular mission: to provide the highest standard of professional cleaning and sanitization services in Delhi NCR. We understand that a clean environment is fundamental to health, productivity, and happiness.
             </p>
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
               Our team consists of certified cleaning specialists who utilize advanced high-pressure steam technology and eco-friendly agents to eliminate deep-seated dirt, allergens, and germs. From residential homes to large-scale corporate offices, we bring the same level of precision and care to every assignment.

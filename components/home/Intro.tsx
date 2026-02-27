@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function IntroSection() {
   return (
@@ -17,7 +18,7 @@ export default function IntroSection() {
         >
           <h4 className="text-[#1E5F7C] font-semibold tracking-wider uppercase flex items-center gap-2">
             <span className="w-8 h-[2px] bg-[#2EC3BD]"></span>
-            Professional Cleaning Services Guwahati
+            Professional Cleaning Services Delhi NCR
           </h4>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-4 leading-tight">
@@ -28,7 +29,7 @@ export default function IntroSection() {
           </h2>
 
           <p className="mt-8 text-gray-600 text-lg leading-relaxed">
-            Welcome to One Mins Cleaning Solutions (OMCAS), your premier choice for professional deep cleaning in Guwahati. We specialize in comprehensive home cleaning, kitchen deep cleaning, sofa sanitization, and corporate office maintenance.
+            Welcome to One Mins Cleaning Solutions (OMCAS), your premier choice for professional deep cleaning in Delhi NCR. We specialize in comprehensive home cleaning, kitchen deep cleaning, sofa sanitization, and corporate office maintenance.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -54,14 +55,12 @@ export default function IntroSection() {
           </div>
 
           <div className="mt-12 flex flex-wrap gap-4">
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+            <Link
               href="/contact"
               className="px-10 py-4 bg-[#1E5F7C] text-white font-bold rounded-full shadow-lg hover:shadow-[#1E5F7C]/30 transition-all duration-300"
             >
               Book Your Service
-            </motion.a>
+            </Link>
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
