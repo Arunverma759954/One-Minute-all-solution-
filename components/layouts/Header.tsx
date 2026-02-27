@@ -50,10 +50,10 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/90 backdrop-blur-md shadow-xl py-1" : "bg-white shadow-md py-2"
-        }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-xl py-0.5" : "bg-white shadow-md py-1"
+        } ${menuOpen ? "!bg-white !opacity-100" : ""}`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between min-h-[60px]">
+      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between min-h-[50px]">
 
         {/* LOGO – Left aligned and clear */}
         <Link href="/" className="flex items-center shrink-0">
@@ -62,7 +62,7 @@ export default function Header() {
             src="/assets/logooo.jpeg"
             alt="One Mins Cleaning Solutions Logo"
             className="block object-contain transition-all"
-            style={{ height: scrolled ? "45px" : "55px", width: "auto" }}
+            style={{ height: scrolled ? "35px" : "45px", width: "auto" }}
           />
         </Link>
 
@@ -133,14 +133,14 @@ export default function Header() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[100] md:hidden bg-white px-8 py-20 flex flex-col space-y-8 shadow-2xl"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[100] md:hidden bg-white px-8 py-20 flex flex-col space-y-6 shadow-2xl overflow-y-auto"
           >
-            {/* SOLID BACKDROP FOR DEPTH */}
-            <div className="absolute inset-0 bg-white z-[-1]" />
+            {/* FORCE WHITE BACKGROUND */}
+            <div className="absolute inset-0 bg-white" style={{ zIndex: -1 }} />
 
             <button
               onClick={() => setMenuOpen(false)}
@@ -167,7 +167,7 @@ export default function Header() {
                   <Link
                     href={link.path}
                     onClick={handleLinkClick}
-                    className="block text-2xl font-bold text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
+                    className="block text-xl font-bold text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
                   >
                     {link.name}
                   </Link>
