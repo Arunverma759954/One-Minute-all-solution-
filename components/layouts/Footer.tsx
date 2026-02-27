@@ -1,8 +1,20 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaArrowUp } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Footer() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -148,14 +160,21 @@ export default function Footer() {
         </a>
       </div>
 
-      {/* SCROLL TO TOP - RESPONSIVE POSITIONING */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-24 md:bottom-10 left-6 md:left-auto md:right-32 bg-[#1E5F7C] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all hover:bg-[#2EC3BD] hover:text-[#1E5F7C] z-[40] scroll-top-animate group"
-        title="Scroll to Top"
-      >
-        <FaArrowUp className="text-xl group-hover:scale-125 transition-transform" />
-      </button>
+      {/* SCROLL TO TOP - RESPONSIVE POSITIONING & CONDITIONAL RENDERING */}
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.5, y: 20 }}
+            onClick={scrollToTop}
+            className="fixed bottom-24 md:bottom-10 left-6 md:left-auto md:right-32 bg-[#1E5F7C] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all hover:bg-[#2EC3BD] hover:text-[#1E5F7C] z-[40] scroll-top-animate group"
+            title="Scroll to Top"
+          >
+            <FaArrowUp className="text-xl group-hover:scale-125 transition-transform" />
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       {/* DESKTOP FLOATING WHATSAPP BUTTON - NOW CIRCULAR & BLINKING */}
       <a
