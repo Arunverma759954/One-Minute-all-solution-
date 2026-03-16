@@ -13,16 +13,16 @@ export default function BlogSection() {
       href: "/blog",
     },
     {
-      title: "Why Sofa Sanitization is Essential for a Healthy Home",
-      desc: "Learn about the hidden dust mites and allergens in your furniture and why professional sanitization is a must for your family.",
+      title: "Why Sofa Deep Cleaning is Essential for a Healthy Home",
+      desc: "Learn about the hidden dust mites and allergens in your furniture and why professional deep cleaning is a must for your family.",
       img: "/assets/a1.jpg",
       date: "Coming soon",
       href: "/blog",
     },
     {
       title: "5 Reasons to Hire Professional Kitchen Cleaners",
-      desc: "From degreasing to deep sanitization, see why expert kitchen cleaning is vital for food safety and a germ-free environment.",
-      img: "/assets/pexels-matilda-wormwood-4099471.jpg",
+      desc: "From degreasing to deep cleaning, see why expert kitchen cleaning is vital for food safety and a germ-free environment.",
+      img: "/assets/14.webp",
       date: "Coming soon",
       href: "/blog",
     },
@@ -44,7 +44,7 @@ export default function BlogSection() {
   };
 
   return (
-    <section className="py-20 md:py-24 bg-gray-50 overflow-hidden">
+    <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6">
 
         {/* Heading */}

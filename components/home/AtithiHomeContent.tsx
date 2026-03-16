@@ -9,7 +9,7 @@ const guestSearches = [
   "Sofa cleaning services near me",
   "Kitchen deep cleaning Delhi NCR",
   "Office cleaning solutions Delhi NCR",
-  "Bathroom sanitization service",
+  "Bathroom cleaning service",
   "Carpet steam cleaning Delhi NCR",
   "Eco-friendly cleaning services",
 ];
@@ -33,8 +33,8 @@ const brandSearches = [
 export default function AtithiHomeContent() {
   return (
     <>
-      {/* ========== PROFESSIONAL SANITIZATION & DEEP CLEANING ========== */}
-      <section className="py-16 md:py-20 bg-white overflow-hidden">
+      {/* ========== PROFESSIONAL DEEP CLEANING & HYGIENE ========== */}
+      <section className="py-12 md:py-16 bg-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -45,16 +45,16 @@ export default function AtithiHomeContent() {
           >
             <div className="inline-flex items-center gap-2 bg-blue-50 text-[#1E5F7C] font-semibold px-4 py-2 rounded-full mb-4">
               <FaShieldAlt className="text-[#1E5F7C]" />
-              Certified Sanitization Expert
+              Certified Hygiene Expert
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-black leading-tight">
-              Hospital-Grade Sanitization & Deep Cleaning
+              Hospital-Grade Deep Cleaning & Hygiene
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              At One Mins Cleaning Solutions (OMCAS), we prioritize your health and safety. Our deep cleaning services include hospital-grade sanitization, eco-friendly chemical treatments, and advanced equipment to ensure your home or office is germ-free.
+              At One Mins Cleaning Solutions (OMCAS), we prioritize your health and safety. Our deep cleaning services include hospital-grade hygiene, eco-friendly chemical treatments, and advanced equipment to ensure your home or office is germ-free.
             </p>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              Serving Delhi NCR, our trained professionals follow strict sanitization protocols to eliminate 99.9% of bacteria and viruses, leaving your environment fresh and safe.
+              Serving Delhi NCR, our trained professionals follow strict deep cleaning protocols to eliminate 99.9% of bacteria and viruses, leaving your environment fresh and safe.
             </p>
           </motion.div>
           <motion.div
@@ -65,14 +65,14 @@ export default function AtithiHomeContent() {
             className="order-1 md:order-2 relative w-full h-[380px] md:h-[420px] rounded-2xl overflow-hidden shadow-xl group"
           >
             <Image
-              src="/assets/pexels-matilda-wormwood-4099471.jpg"
-              alt="Professional Sanitization - One Mins Cleaning Solutions"
+              src="/assets/12.jpg"
+              alt="Professional Deep Cleaning - One Mins Cleaning Solutions"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-4 left-4 right-4 bg-black/60 text-white px-4 py-3 rounded-xl backdrop-blur-sm">
               <p className="font-semibold flex items-center gap-2">
-                <FaShieldAlt className="text-[#1E5F7C]" /> Eco-Friendly & Safe Sanitization
+                <FaShieldAlt className="text-[#1E5F7C]" /> Eco-Friendly & Safe Hygiene
               </p>
             </div>
           </motion.div>
@@ -80,7 +80,7 @@ export default function AtithiHomeContent() {
       </section>
 
       {/* ========== COMPREHENSIVE CLEANING SOLUTIONS ========== */}
-      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
+      <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -106,7 +106,7 @@ export default function AtithiHomeContent() {
               Comprehensive Cleaning & Maintenance Solutions
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              As Delhi NCR's leading cleaning experts, we offer a wide range of services tailored to your specific needs. From sofa sanitization to intensive kitchen degreasing, we ensure every corner of your space is pristine.
+              As Delhi NCR's leading cleaning experts, we offer a wide range of services tailored to your specific needs. From sofa cleaning to intensive kitchen degreasing, we ensure every corner of your space is pristine.
             </p>
             <p className="mt-3 text-gray-700 font-medium">Our specialized services include:</p>
             <ul className="mt-3 space-y-2">
@@ -166,7 +166,7 @@ export default function AtithiHomeContent() {
       </section>
 
       {/* ========== ADVANCED CLEANING TECHNOLOGY ========== */}
-      <section className="py-16 md:py-20 bg-white overflow-hidden">
+      <section className="py-12 md:py-16 bg-white overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -176,7 +176,7 @@ export default function AtithiHomeContent() {
             className="relative w-full h-[340px] rounded-2xl overflow-hidden shadow-xl group"
           >
             <Image
-              src="/assets/pexels-matilda-wormwood-4099471.jpg"
+              src="/assets/15.webp"
               alt="Advanced Cleaning Equipment - OMCAS"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

@@ -7,42 +7,42 @@ import { motion } from "framer-motion";
 export default function RoomsGridSection() {
   const services = [
     {
-      img: "/assets/cl.jpg",
+      img: "/assets/d1.jpg",
       title: "Full Home Deep Cleaning",
       subtitle: "Comprehensive 5-Step Process",
       price: "Starting ₹2999",
       rating: "Excellent (4.9)",
     },
     {
-      img: "/assets/pexels-matilda-wormwood-4099471.jpg",
-      title: "Kitchen Sanitization",
+      img: "/assets/15.webp",
+      title: "Kitchen Deep Cleaning",
       subtitle: "Degreasing & Steam Treatment",
       price: "Starting ₹1499",
       rating: "Top Rated (4.8)",
     },
     {
-      img: "/assets/cl.jpg",
+      img: "/assets/p1.avif",
       title: "Sofa & Carpet Spa",
       subtitle: "Deep Shampoo & Extraction",
       price: "Starting ₹999",
       rating: "Very Good (4.7)",
     },
     {
-      img: "/assets/pexels-matilda-wormwood-4099471.jpg",
+      img: "/assets/b1.jpg",
       title: "Bathroom Deep Clean",
       subtitle: "Acid-Free Scaling & Shine",
       price: "Starting ₹799",
       rating: "Excellent (4.9)",
     },
     {
-      img: "/assets/cl.jpg",
+      img: "/assets/img4.jpeg",
       title: "Office Maintenance",
-      subtitle: "Workstation Sanitization",
+      subtitle: "Workstation Cleaning",
       price: "Starting ₹4999",
       rating: "Professional (4.8)",
     },
     {
-      img: "/assets/pexels-matilda-wormwood-4099471.jpg",
+      img: "/assets/w1.jpg",
       title: "Water Tank Cleaning",
       subtitle: "Ultra-Violet Treatment",
       price: "Starting ₹1199",
@@ -75,12 +75,12 @@ export default function RoomsGridSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="md:text-center mb-12"
+          className="md:text-center mb-10"
         >
           <p className="text-[#1E5F7C] font-semibold tracking-widest uppercase">
             Our Service Packages
           </p>
-          <h2 className="text-4xl font-extrabold text-gray-900 mt-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
             Most Popular Cleaning Solutions
           </h2>
         </motion.div>

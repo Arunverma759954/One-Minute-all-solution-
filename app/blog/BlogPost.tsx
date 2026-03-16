@@ -16,7 +16,7 @@ import {
 
 const faqs = [
   { q: "Is OMCAS a safe choice for my home?", a: "Yes, we prioritize safety with background-verified staff and eco-friendly cleaning agents.", icon: FaShieldAlt },
-  { q: "What makes you the best cleaning service in Delhi NCR?", a: "We offer a combination of hospital-grade sanitization, professional service, and transparent pricing.", icon: FaRupeeSign },
+  { q: "What makes you the best cleaning service in Delhi NCR?", a: "We offer a combination of hospital-grade cleaning, professional service, and transparent pricing.", icon: FaRupeeSign },
   { q: "How far do you serve?", a: "OMCAS serves all of Delhi NCR including Saket, South Delhi, and surrounding areas.", icon: FaMapMarkerAlt },
   { q: "How do I book a cleaning session?", a: "You can book directly through our website or contact our 24/7 support line.", icon: FaPhone },
   { q: "Do you bring your own equipment?", a: "Yes, we provide all industrial-grade equipment and specialized cleaning agents.", icon: FaParking },
@@ -94,7 +94,7 @@ export default function BlogPost() {
             Best Cleaning Service in Delhi NCR for Your Home & Office
           </h1>
           <p className="mt-4 text-base md:text-lg text-white/90 mb-5 max-w-2xl">
-            Experience One Mins Cleaning Solutions (OMCAS) — 24/7 service, eco-friendly deep cleaning, and expert sanitization across Delhi NCR.
+            Experience One Mins Cleaning Solutions (OMCAS) — 24/7 service, eco-friendly deep cleaning, and expert hygiene across Delhi NCR.
           </p>
         </div>
       </header>
@@ -194,7 +194,7 @@ export default function BlogPost() {
                     </h2>
                     <div className="mt-8 space-y-4 text-gray-700 text-lg leading-relaxed">
                       <p>In a busy city like Delhi NCR, germs and dust accumulate fast. Regular cleaning can miss deep-seated dirt in upholstery, carpets, and kitchen surfaces.</p>
-                      <p>That's where OMCAS comes in — the trusted partner for residents and businesses across Delhi NCR. We bring hospital-grade sanitization and professional equipment to every job.</p>
+                      <p>That's where OMCAS comes in — the trusted partner for residents and businesses across Delhi NCR. We bring hospital-grade hygiene and professional equipment to every job.</p>
                       <p>We bridge the gap between everyday cleaning and true hygiene excellence. Every space we clean is left healthier, safer, and fresher.</p>
                     </div>
                     <div className="mt-8 inline-flex items-center gap-3 bg-[#1E5F7C] text-white font-bold px-8 py-4 rounded-2xl">
@@ -226,7 +226,7 @@ export default function BlogPost() {
                   </h2>
                   <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                     <p>Professional cleaning doesn't have to break the bank. OMCAS offers top-tier services across Delhi NCR at competitive prices, ensuring quality without compromise.</p>
-                    <p>We focus on essentials: hospital-grade sanitization, eco-friendly agents, and expert staff. Transparent pricing, no hidden charges, and honest service you can rely on.</p>
+                    <p>We focus on essentials: hospital-grade hygiene, eco-friendly agents, and expert staff. Transparent pricing, no hidden charges, and honest service you can rely on.</p>
                   </div>
                   <div className="mt-8 p-6 bg-amber-50 rounded-2xl border border-amber-100">
                     <p className="text-gray-900 font-bold text-lg">Experience premium cleaning without the premium price. Get your free quote from OMCAS today!</p>

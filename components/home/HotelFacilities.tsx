@@ -24,7 +24,7 @@ export default function FacilitiesSection3() {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-12 md:py-16 overflow-hidden">
 
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
@@ -52,7 +52,7 @@ export default function FacilitiesSection3() {
             Our Cleaning Expertise
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-2 drop-shadow-lg">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2 drop-shadow-lg">
             Professional Solutions for Your Space
           </h2>
 
@@ -73,7 +73,7 @@ export default function FacilitiesSection3() {
           {[
             { title: "Deep Interior Cleaning", icon: FaHome },
             { title: "Sofa & Upholstery", icon: FaShieldAlt },
-            { title: "Kitchen Sanitization", icon: FaHospital },
+            { title: "Kitchen Deep Cleaning", icon: FaHospital },
           ].map((item, index) => {
             const Icon = item.icon;
             return (

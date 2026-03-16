@@ -12,10 +12,10 @@ export default function GalleryPage() {
 
   const galleryImages = [
     { src: "/assets/cl.jpg", category: "Residential", title: "Living Room Deep Clean" },
-    { src: "/assets/img1.jpeg", category: "Residential", title: "Kitchen Sanitization" },
+    { src: "/assets/img1.jpeg", category: "Residential", title: "Kitchen Deep cleaning" },
     { src: "/assets/a1.jpg", category: "Residential", title: "Sofa & Upholstery" },
     { src: "/assets/img4.jpeg", category: "Commercial", title: "Corporate Office Clean" },
-    { src: "/assets/pexels-matilda-wormwood-4099471.jpg", category: "Specialized", title: "Deep Sanitization" },
+    { src: "/assets/13.avif", category: "Specialized", title: "Deep Cleaning" },
     { src: "/assets/a2.jpg", category: "Commercial", title: "Maintenance Service" },
   ];
 
@@ -52,20 +52,20 @@ export default function GalleryPage() {
       </section>
 
       {/* ===================== FILTERS SECTION ===================== */}
-      <div className="bg-white py-16">
+      <div className="bg-white py-12">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center gap-4 mb-16"
+            className="flex flex-wrap justify-center gap-3 mb-12"
           >
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest transition-all duration-300 border-2 ${activeFilter === filter
-                  ? "bg-[#1E5F7C] text-white border-[#1E5F7C] shadow-xl scale-110"
+                className={`px-6 py-2.5 rounded-full font-bold text-[13px] uppercase tracking-widest transition-all duration-300 border-2 ${activeFilter === filter
+                  ? "bg-[#1E5F7C] text-white border-[#1E5F7C] shadow-lg"
                   : "bg-white text-gray-500 border-gray-200 hover:border-[#2EC3BD] hover:text-[#1E5F7C]"
                   }`}
               >

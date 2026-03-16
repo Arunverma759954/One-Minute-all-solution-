@@ -14,7 +14,7 @@ export default function BookYourStayCTA() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#2EC3BD]/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl pointer-events-none" />
 
-          <div className="relative z-10 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-8 md:px-12 lg:px-20 py-16 md:py-24">
+          <div className="relative z-10 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-8 md:px-12 lg:px-20 py-8 md:py-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -22,10 +22,10 @@ export default function BookYourStayCTA() {
               transition={{ duration: 0.8 }}
               className="flex-1 text-center md:text-left"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
                 Ready to Experience a <span className="text-[#2EC3BD]">Spotless</span> Space?
               </h2>
-              <p className="mt-6 text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl">
+              <p className="mt-4 text-white/90 text-base md:text-lg leading-relaxed max-w-2xl">
                 Whether it's your home or office, One Mins Cleaning Solutions provides the most reliable and deep cleaning services across Delhi NCR. Book your slot now for a healthier environment.
               </p>
             </motion.div>
@@ -42,7 +42,7 @@ export default function BookYourStayCTA() {
                 whileTap={{ scale: 0.95 }}
                 type="button"
                 onClick={openModal}
-                className="inline-block bg-[#2EC3BD] text-black font-black px-12 py-5 rounded-full shadow-xl hover:bg-white hover:text-[#1E5F7C] transition-all duration-500 min-w-[220px] text-center text-xl uppercase tracking-wider"
+                className="inline-block bg-[#2EC3BD] text-black font-black px-10 py-3.5 rounded-full shadow-xl hover:bg-white hover:text-[#1E5F7C] transition-all duration-500 min-w-[200px] text-center text-lg uppercase tracking-wider"
               >
                 Book Now
               </motion.button>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function LuxuryIntroSection() {
   return (
-    <section className="relative py-20 bg-white overflow-hidden">
+    <section className="relative py-12 md:py-16 bg-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 items-center">
 
         {/* LEFT CONTENT */}
@@ -20,7 +20,7 @@ export default function LuxuryIntroSection() {
             DEDICATION
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1E1E1E] leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E1E1E] leading-tight">
             Superior Cleaning Standards for Every Space
           </h2>
 

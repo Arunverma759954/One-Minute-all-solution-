@@ -54,7 +54,7 @@ export default function WhyChooseSection() {
           <motion.ul variants={itemVariants} className="mt-4 list-disc list-inside text-gray-600 space-y-2">
             <li>Certified and background-verified professionals</li>
             <li>Use of non-toxic, eco-friendly cleaning agents</li>
-            <li>Advanced hospital-grade sanitization protocols</li>
+            <li>Advanced deep cleaning and hygiene protocols</li>
             <li>Transparent and affordable service pricing</li>
             <li>Flexible scheduling as per your convenience</li>
             <li>100% satisfaction guarantee on every job</li>

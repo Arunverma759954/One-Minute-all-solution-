@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { FaPhoneAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaArrowUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -26,9 +27,17 @@ export default function Footer() {
 
         {/* LOGO + ABOUT */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-extrabold leading-tight flex flex-wrap items-baseline gap-x-1">
-            <span className="text-4xl md:text-5xl text-[#2EC3BD]">1</span>
-            <span>Minute Cleaning <span className="text-white">All Solution</span></span>
+          <Link href="/" className="inline-block mb-6">
+            <Image
+              src="/assets/logooo.jpeg"
+              alt="OMCAS Logo"
+              width={160}
+              height={60}
+              className="h-16 w-auto object-contain rounded-lg bg-white p-1"
+            />
+          </Link>
+          <h2 className="text-2xl font-extrabold leading-tight">
+            One Minute Cleaning <span className="text-[#2EC3BD]">All Solution</span>
           </h2>
           <p className="mt-2 text-sm text-[#2EC3BD]/90 font-black tracking-widest uppercase">Certified Hygiene Experts</p>
           <p className="mt-4 text-gray-300 leading-relaxed">
@@ -146,7 +155,7 @@ export default function Footer() {
 
 
       {/* MOBILE FIXED BOTTOM BAR */}
-      <div className="fixed bottom-0 left-0 right-0 md:hidden flex justify-between items-center bg-black/90 px-6 py-3 border-t border-gray-700 z-50">
+      <div className="fixed bottom-0 left-0 right-0 md:hidden flex justify-between items-center bg-black/90 px-5 py-2.5 border-t border-gray-700 z-50">
         <a href="tel:+919958146822" className="flex items-center text-white space-x-2">
           <FaPhoneAlt className="text-2xl text-[#2EC3BD]" />
           <span className="font-semibold">Call</span>

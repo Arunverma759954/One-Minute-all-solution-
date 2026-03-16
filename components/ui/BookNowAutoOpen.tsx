@@ -12,13 +12,9 @@ export default function BookNowAutoOpen() {
   useEffect(() => {
     const openTimer = setTimeout(() => {
       openModal();
-      const closeTimer = setTimeout(() => {
-        closeModal();
-      }, AUTO_CLOSE_MS);
-      return () => clearTimeout(closeTimer);
     }, DELAY_MS);
     return () => clearTimeout(openTimer);
-  }, [openModal, closeModal]);
+  }, [openModal]);
 
   return null;
 }

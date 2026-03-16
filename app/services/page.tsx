@@ -4,9 +4,9 @@ export const metadata = {
   title:
     "Professional Cleaning Services Delhi NCR — Residential & Commercial | OMCAS",
   description:
-    "Explore our range of expert cleaning packages in Delhi NCR: Residential Deep Cleaning, Sofa & Carpet Sanitization, Corporate Office Maintenance, and Kitchen Cleaning.",
+    "Explore our range of expert cleaning packages in Delhi NCR: Residential Deep Cleaning, Sofa & Carpet Cleaning, Corporate Office Maintenance, and Kitchen Cleaning.",
   keywords:
-    "cleaning services Delhi NCR, deep cleaning Delhi, house cleaning Delhi NCR, sofa cleaning Delhi NCR, kitchen sanitization, office cleaning services Delhi NCR, OMCAS services",
+    "cleaning services Delhi NCR, deep cleaning Delhi, house cleaning Delhi NCR, sofa cleaning Delhi NCR, kitchen cleaning, office cleaning services Delhi NCR, OMCAS services",
 
   alternates: {
     canonical: "https://www.atithihome.com/services",

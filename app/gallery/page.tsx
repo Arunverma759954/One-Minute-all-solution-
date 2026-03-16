@@ -4,9 +4,9 @@ export const metadata = {
   title:
     "Work Gallery | One Mins Cleaning Solutions Delhi NCR — Deep Cleaning in Action",
   description:
-    "See the OMCAS standard of hygiene. Browse our gallery featuring residential deep cleaning, office sanitization, and specialized cleaning projects across Delhi NCR.",
+    "See the OMCAS standard of hygiene. Browse our gallery featuring residential deep cleaning, office cleaning, and specialized cleaning projects across Delhi NCR.",
   keywords:
-    "cleaning gallery Delhi NCR, OMCAS work photos, deep cleaning before after, professional cleaning images, house cleaning gallery Delhi, office sanitization photos",
+    "cleaning gallery Delhi NCR, OMCAS work photos, deep cleaning before after, professional cleaning images, house cleaning gallery Delhi, office cleaning photos",
 
   alternates: {
     canonical: "https://www.atithihome.com/gallery",

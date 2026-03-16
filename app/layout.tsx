@@ -8,11 +8,11 @@ import PageLoader from "@/components/ui/PageLoader";
 import BookNowPopupWrapper from "@/components/layouts/BookNowPopupWrapper";
 
 export const metadata = {
-  title: "1 Minute Cleaning Solutions Delhi NCR — Professional Deep Cleaning & Sanitization",
+  title: "1 Minute Cleaning Solutions Delhi NCR — Professional Deep Cleaning & Hygiene",
   description:
-    "1 Minute Cleaning Solutions (OMCAS) offers professional deep cleaning, sofa sanitization, and office maintenance in Delhi NCR. Expert cleaning since 2018.",
+    "1 Minute Cleaning Solutions (OMCAS) offers professional deep cleaning, sofa cleaning, and office maintenance in Delhi NCR. Expert cleaning since 2018.",
   keywords:
-    "1 Minute Cleaning Solutions Delhi NCR, OMCAS Delhi NCR, deep cleaning Delhi NCR, sofa cleaning Delhi NCR, office cleaning Delhi NCR, sanitization services Delhi NCR",
+    "1 Minute Cleaning Solutions Delhi NCR, OMCAS Delhi NCR, deep cleaning Delhi NCR, sofa cleaning Delhi NCR, office cleaning Delhi NCR, deep cleaning services Delhi NCR",
 
   metadataBase: new URL("https://one-minute-all-solution.vercel.app"),
   alternates: {
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "1 Minute Cleaning Solutions Delhi NCR — Deep Cleaning Experts",
     description:
-      "Professional cleaning, sanitization & maintenance services in Delhi NCR.",
+      "Professional cleaning, deep cleaning & maintenance services in Delhi NCR.",
     url: "https://one-minute-all-solution.vercel.app/",
     siteName: "1 Minute Cleaning Solutions",
     images: [
@@ -39,7 +39,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "1 Minute Cleaning Solutions Delhi NCR — Deep Cleaning Experts",
-    description: "Professional cleaning, sanitization & maintenance services in Delhi NCR.",
+    description: "Professional cleaning, deep cleaning & maintenance services in Delhi NCR.",
     images: ["https://one-minute-all-solution.vercel.app/assets/about.jpg"],
   },
 

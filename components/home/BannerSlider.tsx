@@ -127,7 +127,7 @@ export default function BannerSlider() {
             >
               OMCAS Premier Choice for Professional Deep Cleaning
               <br className="hidden md:block" />
-              & Sanitization Since 2018.
+              & Hygiene Since 2018.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

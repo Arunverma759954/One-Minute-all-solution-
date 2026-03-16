@@ -45,7 +45,7 @@ export default function BookNowPopup() {
       if (data.success) {
         setStatus("success");
         setFormData({ name: "", email: "", mobile: "", message: "" });
-        setTimeout(() => { closeModal(); setStatus("idle"); }, 1800);
+        setTimeout(() => { setStatus("idle"); }, 3000);
       } else setStatus("error");
     } catch {
       setStatus("error");
@@ -122,7 +122,7 @@ export default function BookNowPopup() {
                 required
                 value={formData.mobile}
                 onChange={handleChange}
-                placeholder="+91 9958146822"
+                placeholder="e.g. +91 00000 00000"
                 className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
               />
             </div>

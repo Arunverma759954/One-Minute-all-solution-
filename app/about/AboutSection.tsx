@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* ====================== MISSION SECTION ====================== */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -94,18 +94,18 @@ export default function AboutPage() {
               <span className="w-10 h-1 bg-[#2EC3BD] rounded-full" />
               Who We Are
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl text-black font-extrabold mt-4 leading-[1.1]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-4 leading-[1.1]">
               Providing <span className="text-[#1E5F7C]">1 Minute</span> Solutions for a Spotless Space
             </h2>
             <p className="mt-8 text-gray-600 text-lg leading-relaxed">
-              One Mins Cleaning Solutions (OMCAS) was founded with a singular mission: to provide the highest standard of professional cleaning and sanitization services in Delhi NCR. We understand that a clean environment is fundamental to health, productivity, and happiness.
+              One Mins Cleaning Solutions (OMCAS) was founded with a singular mission: to provide the highest standard of professional cleaning and hygiene services in Delhi NCR. We understand that a clean environment is fundamental to health, productivity, and happiness.
             </p>
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
               Our team consists of certified cleaning specialists who utilize advanced high-pressure steam technology and eco-friendly agents to eliminate deep-seated dirt, allergens, and germs. From residential homes to large-scale corporate offices, we bring the same level of precision and care to every assignment.
             </p>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {["Eco-Friendly Agents", "Certified Professionals", "99.9% Sanitization", "Advanced Equipment"].map((item, i) => (
+              {["Eco-Friendly Agents", "Certified Professionals", "99.9% Dust-Free", "Advanced Equipment"].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
                   <FaCheckCircle className="text-[#2EC3BD] text-xl" />
                   <span className="text-gray-800 font-bold">{item}</span>
@@ -117,7 +117,7 @@ export default function AboutPage() {
       </section>
 
       {/* ===================== STATS COUNTER ===================== */}
-      <section className="relative py-24 bg-[#1E5F7C] overflow-hidden">
+      <section className="relative py-16 bg-[#1E5F7C] overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#2EC3BD]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl" />
@@ -147,7 +147,7 @@ export default function AboutPage() {
       </section>
 
       {/* ===================== CORE VALUES ===================== */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-[1440px] mx-auto px-6 text-center mb-16">
           <h4 className="text-[#1E5F7C] font-black uppercase tracking-widest text-sm">Our Principles</h4>
           <h2 className="text-3xl md:text-4xl font-black text-gray-900 mt-2 shadow-sm">Integrity • Innovation • Excellence</h2>
@@ -164,7 +164,7 @@ export default function AboutPage() {
           >
             <h3 className="text-3xl font-extrabold text-[#1E5F7C] mb-6 underline decoration-[#2EC3BD] decoration-4 underline-offset-8">The One Mins Guarantee</h3>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              When you choose OMCAS, you are choosing a partner dedicated to your health and comfort. We don&apos;t just clean surfaces; we sanitize spaces. Our protocols are inspired by hospital-grade hygiene standards, ensuring that every home and office we touch becomes a safer, more breathable environment.
+              When you choose OMCAS, you are choosing a partner dedicated to your health and comfort. We don&apos;t just clean surfaces; we transform spaces. Our protocols are inspired by the highest hygiene standards, ensuring that every home and office we touch becomes a safer, more breathable environment.
             </p>
             <ul className="space-y-4">
               {[

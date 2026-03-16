@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function IntroSection() {
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
@@ -21,7 +21,7 @@ export default function IntroSection() {
             Professional Cleaning Services Delhi NCR
           </h4>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-extrabold mt-4 leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-black font-extrabold mt-4 leading-tight">
             Expert Deep Cleaning for Your{" "}
             <span className="text-[#2EC3BD]">Home & Office</span>
             <br className="hidden sm:block" />
@@ -29,7 +29,7 @@ export default function IntroSection() {
           </h2>
 
           <p className="mt-8 text-gray-600 text-lg leading-relaxed">
-            Welcome to One Mins Cleaning Solutions (OMCAS), your premier choice for professional deep cleaning in Delhi NCR. We specialize in comprehensive home cleaning, kitchen deep cleaning, sofa sanitization, and corporate office maintenance.
+            Welcome to One Mins Cleaning Solutions (OMCAS), your premier choice for professional deep cleaning in Delhi NCR. We specialize in comprehensive home cleaning, kitchen deep cleaning, sofa cleaning, and corporate office maintenance.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -54,10 +54,10 @@ export default function IntroSection() {
             </motion.div>
           </div>
 
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="px-10 py-4 bg-[#1E5F7C] text-white font-bold rounded-full shadow-lg hover:shadow-[#1E5F7C]/30 transition-all duration-300"
+              className="px-8 py-3.5 bg-[#1E5F7C] text-white font-bold rounded-full shadow-lg hover:shadow-[#1E5F7C]/30 transition-all duration-300"
             >
               Book Your Service
             </Link>
@@ -65,7 +65,7 @@ export default function IntroSection() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               href="tel:+918822453835"
-              className="px-10 py-4 border-2 border-[#1E5F7C] text-[#1E5F7C] font-bold rounded-full hover:bg-[#1E5F7C] hover:text-white transition-all duration-300"
+              className="px-8 py-3.5 border-2 border-[#1E5F7C] text-[#1E5F7C] font-bold rounded-full hover:bg-[#1E5F7C] hover:text-white transition-all duration-300"
             >
               Call Now
             </motion.a>
@@ -91,7 +91,7 @@ export default function IntroSection() {
             </div>
             <div className="relative h-[80%] rounded-3xl overflow-hidden shadow-2xl self-end mb-8 border-4 border-white">
               <Image
-                src="/assets/pexels-matilda-wormwood-4099471.jpg"
+                src="/assets/14.webp"
                 alt="Professional Team Working"
                 fill
                 className="object-cover"

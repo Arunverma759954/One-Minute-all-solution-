@@ -63,7 +63,7 @@ export default function ContactSection() {
           transition={{ duration: 1 }}
           className="absolute z-20 text-center px-4"
         >
-          <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+          <h1 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
             Get In <span className="text-[#2EC3BD]">Touch</span>
           </h1>
           <p className="text-white mt-4 text-lg md:text-xl font-bold opacity-90 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ export default function ContactSection() {
       </section>
 
       {/* ====================== CONTACT CONTENT ====================== */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
 
           {/* LEFT: INFO CARDS */}
@@ -89,7 +89,7 @@ export default function ContactSection() {
                 <span className="w-10 h-1 bg-[#2EC3BD] rounded-full" />
                 Contact Details
               </span>
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-4 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mt-4 leading-tight">
                 Ready to Experience <span className="text-[#1E5F7C]">1 Minute</span> Perfection?
               </h2>
               <p className="mt-6 text-gray-600 text-lg leading-relaxed">
@@ -138,12 +138,12 @@ export default function ContactSection() {
             <div className="bg-[#1E5F7C] p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2EC3BD]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
               <div className="flex items-center gap-6 relative z-10">
-                <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-4xl text-[#2EC3BD]">
+                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-3xl text-[#2EC3BD]">
                   <FaHeadset />
                 </div>
                 <div>
-                  <h4 className="text-white font-black text-2xl italic">Support Hotlink</h4>
-                  <p className="text-white/70 font-bold uppercase tracking-widest text-sm">Emergency Disinfection ? Call Now</p>
+                  <h4 className="text-white font-black text-xl italic">Support Hotlink</h4>
+                  <p className="text-white/70 font-bold uppercase tracking-widest text-sm">Emergency Cleaning ? Call Now</p>
                 </div>
               </div>
             </div>
@@ -157,8 +157,8 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-[3rem] shadow-2xl p-10 md:p-14 border-t-8 border-[#1E5F7C]"
           >
-            <h3 className="text-2xl font-black text-gray-900 mb-2">Book Your Service</h3>
-            <p className="text-gray-500 font-bold mb-10">Fill the form below and we&apos;ll get back to you within 60 minutes.</p>
+            <h3 className="text-xl font-black text-gray-900 mb-2">Book Your Service</h3>
+            <p className="text-gray-500 font-bold mb-8">Fill the form below and we&apos;ll get back to you within 60 minutes.</p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -210,9 +210,9 @@ export default function ContactSection() {
                   className="w-full bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 py-4 focus:outline-none focus:border-[#2EC3BD] transition-all font-bold appearance-none cursor-pointer"
                 >
                   <option>Residential Deep Cleaning</option>
-                  <option>Sofa & Carpet Sanitization</option>
+                   <option>Sofa & Carpet Cleaning</option>
                   <option>Corporate Office Maintenance</option>
-                  <option>Disinfection & Sanitization</option>
+                  <option>Move-in / Move-out Cleaning</option>
                   <option>Kitchen & Chimney Cleaning</option>
                 </select>
               </div>
@@ -234,7 +234,7 @@ export default function ContactSection() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={loading}
-                className="w-full bg-[#1E5F7C] text-white font-black py-5 rounded-2xl shadow-xl hover:bg-[#2EC3BD] hover:text-[#1E5F7C] transition-all duration-300 uppercase tracking-[0.2em] text-sm disabled:opacity-70"
+                className="w-full bg-[#1E5F7C] text-white font-black py-4 rounded-2xl shadow-xl hover:bg-[#2EC3BD] hover:text-[#1E5F7C] transition-all duration-300 uppercase tracking-[0.2em] text-xs disabled:opacity-70"
               >
                 {loading ? "Processing..." : "Submit Inquiry"}
               </motion.button>
@@ -251,7 +251,7 @@ export default function ContactSection() {
       </section>
 
       {/* ====================== MAP SECTION ====================== */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-[1440px] mx-auto px-6">
           <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-50 h-[500px]">
             <iframe

@@ -2,14 +2,41 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FiPhoneCall, FiMenu, FiX } from "react-icons/fi";
+import { FiPhoneCall, FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { useBookNowModal } from "@/components/ui/BookNowModalContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { openModal } = useBookNowModal();
+
+  const NAV_LINKS = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    {
+      name: "Services",
+      path: "/services",
+      dropdown: [
+        { name: "Deep Cleaning", path: "/services/deep-cleaning" },
+        { name: "Pest Control", path: "/services/pest-control" },
+        { name: "Marble Polish", path: "/services/marble-polish" },
+        { name: "Bathroom Cleaning", path: "/services/bathroom-cleaning" },
+        { name: "Fitachain Cleaning", path: "/services/fitachain-cleaning" },
+        { name: "Water Tank Cleaning", path: "/services/water-tank-cleaning" },
+        { name: "Fogging Cleaning", path: "/services/fogging-cleaning" },
+        { name: "Electrician", path: "/services/electrician" },
+        { name: "Plumber", path: "/services/plumber" },
+        { name: "Termite Control", path: "/services/termite-control" },
+        { name: "Carpenter", path: "/services/carpenter" },
+      ],
+    },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +78,7 @@ export default function Header() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-xl py-1" : "bg-white shadow-md py-3"
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-xl py-0.5" : "bg-white shadow-md py-2"
           } ${menuOpen ? "!bg-white !opacity-100" : ""}`}
       >
         <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between min-h-[60px]">
@@ -63,29 +90,66 @@ export default function Header() {
               src="/assets/logooo.jpeg"
               alt="One Mins Cleaning Solutions Logo"
               className="block object-contain transition-all"
-              style={{ height: scrolled ? "45px" : "55px", width: "auto" }}
+              style={{ height: scrolled ? "50px" : "65px", width: "auto" }}
             />
           </Link>
 
 
           {/* DESKTOP MENU */}
-          <nav className="hidden md:flex space-x-8 text-[15px] font-bold uppercase tracking-wider">
-            {[
-              { name: "Home", path: "/" },
-              { name: "About Us", path: "/about" },
-              { name: "Services", path: "/services" },
-              { name: "Gallery", path: "/gallery" },
-              { name: "Blog", path: "/blog" },
-              { name: "Contact", path: "/contact" },
-            ].map((link) => (
-              <Link
+          <nav className="hidden md:flex space-x-8 text-[13px] font-bold uppercase tracking-[0.15em]">
+            {NAV_LINKS.map((link) => (
+              <div
                 key={link.name}
-                href={link.path}
-                className="relative group hover:text-[#1E5F7C] text-black transition-colors"
+                className="relative group h-full flex items-center"
+                onMouseEnter={() => link.dropdown && setDropdownOpen(true)}
+                onMouseLeave={() => link.dropdown && setDropdownOpen(false)}
               >
-                {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2EC3BD] transition-all duration-300 group-hover:w-full" />
-              </Link>
+                {link.dropdown ? (
+                  <div className="flex items-center gap-1 cursor-pointer py-4 hover:text-[#1E5F7C] text-gray-800 transition-colors">
+                    <Link href={link.path}>{link.name}</Link>
+                    <FiChevronDown className={`transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""}`} />
+                  </div>
+                ) : (
+                  <Link
+                    href={link.path}
+                    className="relative py-4 hover:text-[#1E5F7C] text-gray-800 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                )}
+                {/* Underline - Thinner and more subtle */}
+                {!link.dropdown && (
+                  <span className="absolute bottom-3 left-0 w-0 h-[1.5px] bg-[#2EC3BD] transition-all duration-300 group-hover:w-full" />
+                )}
+
+                {/* Dropdown Menu */}
+                {link.dropdown && (
+                  <AnimatePresence>
+                    {dropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl py-4 border border-gray-100 mt-2 overflow-hidden"
+                      >
+                        <div className="flex flex-col">
+                          {link.dropdown.map((item) => (
+                            <Link
+                              key={item.name}
+                              href={item.path}
+                              onClick={() => setDropdownOpen(false)}
+                              className="px-6 py-2 text-[13px] font-bold text-gray-700 hover:bg-[#1E5F7C]/5 hover:text-[#1E5F7C] transition-colors"
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                )}
+              </div>
             ))}
           </nav>
 
@@ -152,27 +216,57 @@ export default function Header() {
             </button>
 
             <div className="flex flex-col space-y-6 mt-4">
-              {[
-                { name: "Home", path: "/" },
-                { name: "About Us", path: "/about" },
-                { name: "Services", path: "/services" },
-                { name: "Gallery", path: "/gallery" },
-                { name: "Blog", path: "/blog" },
-                { name: "Contact", path: "/contact" },
-              ].map((link, idx) => (
+              {NAV_LINKS.map((link, idx) => (
                 <motion.div
                   key={link.name}
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 + idx * 0.05 }}
+                  className="space-y-4"
                 >
-                  <Link
-                    href={link.path}
-                    onClick={handleLinkClick}
-                    className="block text-xl font-bold text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.dropdown ? (
+                    <div className="space-y-4">
+                      <button
+                        onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                        className="flex items-center justify-between w-full text-xl font-black text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
+                      >
+                        {link.name}
+                        <FiChevronDown className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+                      </button>
+                      <AnimatePresence>
+                        {mobileServicesOpen && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="overflow-hidden"
+                          >
+                            <div className="flex flex-col space-y-3 pl-4 border-l-2 border-[#1E5F7C]/10 mt-2 pb-2">
+                              {link.dropdown.map((item) => (
+                                <Link
+                                  key={item.name}
+                                  href={item.path}
+                                  onClick={handleLinkClick}
+                                  className="text-base font-bold text-gray-500 hover:text-[#1E5F7C]"
+                                >
+                                  {item.name}
+                                </Link>
+                              ))}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <Link
+                      href={link.path}
+                      onClick={handleLinkClick}
+                      className="block text-xl font-black text-[#1E5F7C] tracking-tight hover:text-[#2EC3BD] transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </motion.div>
               ))}
             </div>
