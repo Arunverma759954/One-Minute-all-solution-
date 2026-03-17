@@ -31,6 +31,7 @@ export default function Header() {
         { name: "Plumber", path: "/services/plumber" },
         { name: "Termite Control", path: "/services/termite-control" },
         { name: "Carpenter", path: "/services/carpenter" },
+        { name: "AC Service", path: "/services/ac-service" },
       ],
     },
     { name: "Gallery", path: "/gallery" },

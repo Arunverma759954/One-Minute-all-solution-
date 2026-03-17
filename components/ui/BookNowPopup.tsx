@@ -68,40 +68,40 @@ export default function BookNowPopup() {
       aria-labelledby="book-now-title"
     >
       <div
-        className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden"
+        className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[95vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header - teal/blue with pattern feel, logo + headline (jaise dusri website) */}
-        <div className="relative bg-[#1E5F7C] text-white px-6 py-5 overflow-hidden">
+        <div className="relative bg-[#1E5F7C] text-white px-5 sm:px-6 py-3 sm:py-5 shrink-0 overflow-hidden">
           <div className="absolute inset-0 opacity-10 bg-[linear-gradient(45deg,transparent_40%,#2EC3BD_40%,#2EC3BD_60%,transparent_60%)] bg-[length:24px_24px]" />
           <button
             type="button"
             onClick={closeModal}
             title="Close"
-            className="absolute right-3 top-3 w-11 h-11 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center text-white z-10 transition shadow-lg border-2 border-white"
+            className="absolute right-2 top-2 sm:right-3 sm:top-3 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center text-white z-10 transition shadow-lg border-2 border-white"
             aria-label="Close popup"
           >
-            <FiX className="text-2xl" strokeWidth={2.5} />
+            <FiX className="text-xl sm:text-2xl" strokeWidth={2.5} />
           </button>
-          <div className="relative flex items-center gap-4">
+          <div className="relative flex items-center gap-3 sm:gap-4">
             <div className="shrink-0">
-              <Image src="/assets/logooo.jpeg" alt="Logo" width={64} height={64} className="rounded-full object-cover w-14 h-14 border-2 border-[#2EC3BD]" />
+              <Image src="/assets/logooo.jpeg" alt="Logo" width={64} height={64} className="rounded-full object-cover w-12 h-12 sm:w-14 sm:h-14 border-2 border-[#2EC3BD]" />
             </div>
             <div>
-              <h2 id="book-now-title" className="text-lg font-bold leading-tight">
+              <h2 id="book-now-title" className="text-base sm:text-lg font-bold leading-tight">
                 <span className="text-[#2EC3BD]">BOOK / ENQUIRY</span>
                 <span className="block text-white">Now Open For Registration</span>
               </h2>
-              <p className="text-sm text-white/90 mt-0.5">Fill the form below — we will get back to you soon.</p>
+              <p className="text-[12px] sm:text-sm text-white/90 mt-0.5">Fill the form below — we will get back to you soon.</p>
             </div>
           </div>
         </div>
 
         {/* Form + features side by side on larger screens */}
-        <div className="p-6">
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="p-4 sm:p-6 overflow-y-auto custom-scrollbar">
+          <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
             <div>
-              <label htmlFor="popup-name" className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+              <label htmlFor="popup-name" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Name *</label>
               <input
                 id="popup-name"
                 type="text"
@@ -110,11 +110,11 @@ export default function BookNowPopup() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your name"
-                className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
+                className="w-full rounded-xl border border-gray-200 px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
               />
             </div>
             <div>
-              <label htmlFor="popup-mobile" className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+              <label htmlFor="popup-mobile" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Phone *</label>
               <input
                 id="popup-mobile"
                 type="tel"
@@ -123,23 +123,25 @@ export default function BookNowPopup() {
                 value={formData.mobile}
                 onChange={handleChange}
                 placeholder="e.g. +91 00000 00000"
-                className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
+                className="w-full rounded-xl border border-gray-200 px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
               />
             </div>
-            <div>
-              <label htmlFor="popup-email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input
-                id="popup-email"
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="your@email.com"
-                className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
-              />
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex-1">
+                <label htmlFor="popup-email" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input
+                  id="popup-email"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="your@email.com"
+                  className="w-full rounded-xl border border-gray-200 px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition"
+                />
+              </div>
             </div>
             <div>
-              <label htmlFor="popup-message" className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+              <label htmlFor="popup-message" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Message *</label>
               <textarea
                 id="popup-message"
                 name="message"
@@ -147,30 +149,30 @@ export default function BookNowPopup() {
                 rows={2}
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Your message or preferred date..."
-                className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition resize-none"
+                placeholder="Your message..."
+                className="w-full rounded-xl border border-gray-200 px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5F7C]/30 focus:border-[#1E5F7C] transition resize-none"
               />
             </div>
 
             {status === "success" && (
-              <p className="text-sm font-medium text-green-600">Message sent! We will get back soon.</p>
+              <p className="text-xs sm:text-sm font-medium text-green-600">Message sent! We will get back soon.</p>
             )}
             {status === "error" && (
-              <p className="text-sm font-medium text-red-600">Something went wrong. Please try again.</p>
+              <p className="text-xs sm:text-sm font-medium text-red-600">Something went wrong. Please try again.</p>
             )}
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-1 sm:pt-2">
               <a
                 href="tel:+919958146822"
-                className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-xl transition"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 sm:py-3 px-4 rounded-xl transition text-sm sm:text-base"
               >
-                <FiPhone className="text-lg" />
-                Call US +91 9958146822
+                <FiPhone className="text-base sm:text-lg" />
+                Call US
               </a>
               <button
                 type="submit"
                 disabled={loading}
-                className="flex-1 bg-[#2EC3BD] text-gray-900 font-bold py-3 rounded-xl hover:bg-[#25a8a2] transition disabled:opacity-70 shadow-md"
+                className="flex-[1.5] bg-[#2EC3BD] text-gray-900 font-bold py-2.5 sm:py-3 rounded-xl hover:bg-[#25a8a2] transition disabled:opacity-70 shadow-md text-sm sm:text-base"
               >
                 {loading ? "Sending..." : "Submit Enquiry"}
               </button>
@@ -178,12 +180,12 @@ export default function BookNowPopup() {
           </form>
 
           {/* Yellow features box - jaise reference image me checkmarks wala */}
-          <div className="mt-5 p-4 rounded-xl bg-[#E0F7F6] border border-[#1E5F7C]/30">
-            <p className="text-sm font-bold text-gray-800 mb-2">Why choose us</p>
-            <ul className="space-y-1.5 text-sm text-gray-700">
-              <li className="flex items-center gap-2"><FiCheck className="text-[#1E5F7C] shrink-0" /> Quick & reliable service</li>
+          <div className="mt-3 sm:mt-5 p-3 sm:p-4 rounded-xl bg-[#E0F7F6] border border-[#1E5F7C]/30">
+            <p className="text-xs sm:text-sm font-bold text-gray-800 mb-1 sm:mb-2">Why choose us</p>
+            <ul className="grid grid-cols-1 xs:grid-cols-2 sm:block gap-1.5 text-[11px] sm:text-sm text-gray-700">
+              <li className="flex items-center gap-2"><FiCheck className="text-[#1E5F7C] shrink-0" /> Quick & reliable</li>
               <li className="flex items-center gap-2"><FiCheck className="text-[#1E5F7C] shrink-0" /> Affordable rates</li>
-              <li className="flex items-center gap-2"><FiCheck className="text-[#1E5F7C] shrink-0" /> Quality cleaning solutions</li>
+              <li className="flex items-center gap-2 hidden sm:flex"><FiCheck className="text-[#1E5F7C] shrink-0" /> Quality cleaning</li>
             </ul>
           </div>
         </div>

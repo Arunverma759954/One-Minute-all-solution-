@@ -48,6 +48,13 @@ export default function RoomsGridSection() {
       price: "Starting ₹1199",
       rating: "Certified (4.6)",
     },
+    {
+      img: "/assets/ac1.jpg",
+      title: "AC Service & Maintenance",
+      subtitle: "Filter Clean & Gas Refill",
+      price: "Starting ₹599",
+      rating: "Top Rated (4.9)",
+    },
   ];
 
   const containerVariants = {

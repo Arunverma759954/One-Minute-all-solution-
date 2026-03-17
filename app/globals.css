@@ -209,3 +209,21 @@ html {
 .scroll-top-animate {
   animation: scroll-top-pulse 2s infinite ease-in-out;
 }
+
+/* Custom Scrollbar for Popups/Modals */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(30, 95, 124, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 95, 124, 0.4);
+}

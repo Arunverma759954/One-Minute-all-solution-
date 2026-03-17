@@ -36,6 +36,12 @@ export default function ServiceSection() {
       img: "/assets/15.webp",
       icon: <FaTools />,
     },
+    {
+      title: "AC Service & Repair",
+      description: "Professional AC maintenance and repair including jet wash, gas refilling, and installation by certified technicians for all brands.",
+      img: "/assets/ac1.jpg",
+      icon: <FaTools />,
+    },
   ];
 
   return (
